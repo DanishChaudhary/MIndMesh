@@ -1,0 +1,802 @@
+[
+  {
+  "phrase": "Beat about/around the bush",
+  "meaning": "Avoiding the main topic // Speak in a round-about manner // speaking a vaguely to avoid talking about it"
+  },
+  {
+  "phrase": "Spill the beans",
+  "meaning": "Disclose the secrets accidentally"
+  },
+  {
+  "phrase": "Cost an arm and a leg",
+  "meaning": "Very expensive // A large amount of money"
+  },
+  {
+  "phrase": "Once in a blue moon",
+  "meaning": "Rarely and infrequently // occasionally"
+  },
+  {
+  "phrase": "Face the music",
+  "meaning": "To accept punishment for mistake // Get reprimanded // to bear the consequences // Accept the blame"
+  },
+  {
+  "phrase": "Under the weather",
+  "meaning": "To not feel well // To feel sick or unhealthy // To be in low spirits"
+  },
+  {
+  "phrase": "A bolt from the blue",
+  "meaning": "Something unexpected and unpleasant // A complete surprise // A sudden calamity // An unexpected disaster"
+  },
+  {
+  "phrase": "Bury the hatchet",
+  "meaning": "To make peace // To end a quarrel"
+  },
+  {
+  "phrase": "Wild goose chase",
+  "meaning": "A worthless hunt or chase // Futile search // Unprofitable adventure"
+  },
+  {
+  "phrase": "At the eleventh hour",
+  "meaning": "At the very last moment // Just before the deadline"
+  },
+  {
+  "phrase": "Blow one's own trumpet",
+  "meaning": "Praise oneself // Talk boastfully about oneself // to boast about their achievements"
+  },
+  {
+  "phrase": "Break the ice",
+  "meaning": "Initiate something // to start a conversation // To make someone comfortable // To break a painful silence"
+  },
+  {
+  "phrase": "Get into hot water",
+  "meaning": "To get into trouble // To be in a difficult situation in which you can be criticised"
+  },
+  {
+  "phrase": "Hit the nail on the head",
+  "meaning": "Say or do something exactly right // to find exactly the right answer"
+  },
+  {
+  "phrase": "Have an axe to grind",
+  "meaning": "A private interest to serve // To have an ulterior motive"
+  },
+  {
+  "phrase": "To smell a rat",
+  "meaning": "Suspect a trick or deceit // detected something wrong"
+  },
+  {
+  "phrase": "Call it a day",
+  "meaning": "Decide or agree to stop doing something // to give up work and go back to home"
+  },
+  {
+  "phrase": "Gift of the gab",
+  "meaning": "Ability to speak eloquently // Talks well and persuasively // Ability to convince"
+  },
+  {
+  "phrase": "See eye to eye",
+  "meaning": "Be in full agreement"
+  },
+  {
+  "phrase": "Sit on the fence",
+  "meaning": "To remain neutral, to refuse to take sides in a dispute // halting between two opinions"
+  },
+  {
+  "phrase": "To flog/beat a dead horse",
+  "meaning": "To attempt to do the impossible // waste energy on an unalterable situation // a futile effort"
+  },
+  {
+  "phrase": "A Blessing/boon in disguise",
+  "meaning": "An apparent misfortune that eventually has good results // A hidden favour"
+  },
+  {
+  "phrase": "A fish out of water",
+  "meaning": "An uncomfortable, unfamiliar or unsuitable position or situation // A person out of accustomed"
+  },
+  {
+  "phrase": "At the drop of a hat/dime",
+  "meaning": "Without any hesitation // instantly // without having planned beforehand"
+  },
+  {
+  "phrase": "Hold your horses",
+  "meaning": "Be patient // Slow down // To restrain oneself"
+  },
+  {
+  "phrase": "It's Raining cats and dogs",
+  "meaning": "Raining extremely heavily // A very heavy downpour"
+  },
+  {
+  "phrase": "Leave no stone unturned",
+  "meaning": "Try every possible course of action in order to achieve something"
+  },
+  {
+  "phrase": "Let the cat out of the bag",
+  "meaning": "Reveal a secret carelessly or by mistake"
+  },
+  {
+  "phrase": "A hard nut to crack",
+  "meaning": "Difficult task // A tough challenge // A difficult person // An inflexible person who is hard to convince"
+  },
+  {
+  "phrase": "A red letter day",
+  "meaning": "An important day // a day that is pleasantly noteworthy or memorable // happy and significant day"
+  },
+  {
+  "phrase": "Add fuel to the fire/flames",
+  "meaning": "Make things worse // worsened the difficult situation"
+  },
+  {
+  "phrase": "Cry over spilt milk",
+  "meaning": "To complain about a loss from the past // Feeling sorry over a mistake that cannot be changed or rectified"
+  },
+  {
+  "phrase": "Through thick and thin",
+  "meaning": "Support under all circumstances // in times of good and bad fortune"
+  },
+  {
+  "phrase": "To end in smoke",
+  "meaning": "To come to nothing // end without any practical result"
+  },
+  {
+  "phrase": "All at sea // Feel at sea",
+  "meaning": "Puzzled // state of confusion // lost and confused"
+  },
+  {
+  "phrase": "Bite off more than one can chew",
+  "meaning": "Take on more responsibility than one can handle"
+  },
+  {
+  "phrase": "Bite the bullet",
+  "meaning": "To force yourself to do something unpleasant // To get something over with because it is inevitable"
+  },
+  {
+  "phrase": "On cloud nine",
+  "meaning": "Extremely happy and excited"
+  },
+  {
+  "phrase": "Snake in the grass",
+  "meaning": "An unreliable and deceitful person // A treacherous person // A secret enemy"
+  },
+  {
+  "phrase": "To miss the boat/bus",
+  "meaning": "To miss an opportunity // lose an opportunity"
+  },
+  {
+  "phrase": "To turn a deaf ear",
+  "meaning": "Disregard // refused to obey // to be indifferent // neglect"
+  },
+  {
+  "phrase": "Read between the lines",
+  "meaning": "Understand the hidden meaning // find more meaning than the words appear to express"
+  },
+  {
+  "phrase": "A piece of cake",
+  "meaning": "A very easy task"
+  },
+  {
+  "phrase": "By fits and starts",
+  "meaning": "Unsteady // irregularly"
+  },
+  {
+  "phrase": "By leaps and bounds",
+  "meaning": "Very quickly // rapidly // Swiftly"
+  },
+  {
+  "phrase": "Cock and bull story",
+  "meaning": "An unbelievable or absurd story"
+  },
+  {
+  "phrase": "Give someone the cold shoulder",
+  "meaning": "Deliberately ignore, avoid or be unfriendly towards someone"
+  },
+  {
+  "phrase": "In a nutshell",
+  "meaning": "Briefly and concisely // In a short, clear way // To describe in few words"
+  },
+  {
+  "phrase": "In the same boat",
+  "meaning": "In the same unpleasant or difficult situation"
+  },
+  {
+  "phrase": "Pull yourself together",
+  "meaning": "To calm oneself down and begin to think or act appropriately"
+  },
+  {
+  "phrase": "A dark horse",
+  "meaning": "An unexpected winner // someone who unexpectedly succeeds // an unknown entry // a competitor of unknown capabilities"
+  },
+  {
+  "phrase": "A dime a dozen",
+  "meaning": "Very common and of no particular value // Anything that is common and easy to get"
+  },
+  {
+  "phrase": "A stone's throw away",
+  "meaning": "A very short distance"
+  },
+  {
+  "phrase": "Back to the drawing board",
+  "meaning": "An idea has been unsuccessful and that a new one must be devised // plan it all over again"
+  },
+  {
+  "phrase": "Barking up the wrong tree",
+  "meaning": "Trying to do something in a way that will not work // accuse or denounce the wrong person"
+  },
+  {
+  "phrase": "Be all ears",
+  "meaning": "Listening intently // To be ready and eager to listen"
+  },
+  {
+  "phrase": "Burn the midnight oil",
+  "meaning": "To work or study till very late in the night // To work very hard"
+  },
+  {
+  "phrase": "Chip off the old block",
+  "meaning": "Reminds them of one's father // someone similar in character or behaviour to one's father // Resembling parents"
+  },
+  {
+  "phrase": "Get out of hand",
+  "meaning": "To become uncontrollable // get out of control"
+  },
+  {
+  "phrase": "Pull someone's leg",
+  "meaning": "To make fool of // playing a joke with someone // To tease someone"
+  },
+  {
+  "phrase": "Take with a pinch/grain of salt",
+  "meaning": "Not believe completely something that you are told // To listen to something with considerable doubt"
+  },
+  {
+  "phrase": "The Lion's share",
+  "meaning": "The biggest and best part of a whole // The greatest and most desirable portion of something"
+  },
+  {
+  "phrase": "To fight tooth and nail",
+  "meaning": "To make every possible effort // To fight furiously and fiercely, with all one's strength and effort"
+  },
+  {
+  "phrase": "To hit the sack",
+  "meaning": "To prepare for sleep // to go to bed"
+  },
+  {
+  "phrase": "Under a cloud",
+  "meaning": "Under suspicion"
+  },
+  {
+  "phrase": "As fit as a fiddle",
+  "meaning": "Strong and healthy // In a perfectly healthy condition"
+  },
+  {
+  "phrase": "Best of both worlds",
+  "meaning": "A situation wherein someone has the privilege of enjoying two different opportunities // all the advantages // An ideal situation"
+  },
+  {
+  "phrase": "By hook or by crook",
+  "meaning": "By any means, good or bad // Using whatever methods are necessary // In whatever way one can"
+  },
+  {
+  "phrase": "By the skin of one's teeth",
+  "meaning": "By the narrowest margin // Having a narrow escape // To just barely manage to achieve something"
+  },
+  {
+  "phrase": "Every cloud has a silver lining",
+  "meaning": "Every unpleasant situation has a positive side // Something promising is there in any difficult situation"
+  },
+  {
+  "phrase": "Grease the palm",
+  "meaning": "To bribe discreetly // to bribe someone"
+  },
+  {
+  "phrase": "Hand in glove // Hand and glove",
+  "meaning": "In close association // in partnership for something dishonest // Very intimate terms"
+  },
+  {
+  "phrase": "In high/good spirits",
+  "meaning": "Full of hope and enthusiasm // Joyful // Cheerful and elated"
+  },
+  {
+  "phrase": "Keep at arm's length",
+  "meaning": "To be at a distance with someone // Avoid being friendly with someone"
+  },
+  {
+  "phrase": "Strain every nerve",
+  "meaning": "Work very hard // to make utmost efforts"
+  },
+  {
+  "phrase": "Throw caution to the wind",
+  "meaning": "To do something without worrying about the risk // To behave recklessly"
+  },
+  {
+    "phrase": "To eat a humble pie",
+    "meaning": "To accept defeat // suffer humiliation // had to yield under pressure // To apologise humbly"
+    },
+    {
+    "phrase": "At one's wit's end",
+    "meaning": "Completely confused or perplexed"
+    },
+    {
+    "phrase": "Build castles in the air",
+    "meaning": "Daydream // Have unrealistic ideas // to create impossible dreams or hopes"
+    },
+    {
+    "phrase": "Burn one's bridges/boats",
+    "meaning": "To destroy all relations // to make it impossible to return to the previous situation later"
+    },
+    {
+    "phrase": "Catch red-handed",
+    "meaning": "To catch someone doing something illegal // Caught in the act of committing the crime"
+    },
+    {
+    "phrase": "Close shave",
+    "meaning": "Narrow escape from danger or disaster"
+    },
+    {
+    "phrase": "Don't count your chickens before they hatch",
+    "meaning": "Don't make plans based on events that have not yet happened"
+    },
+    {
+    "phrase": "Full of beans",
+    "meaning": "Lively and energetic // Full of energy"
+    },
+    {
+    "phrase": "Go the extra mile",
+    "meaning": "Going above and beyond whatever is required for the task at hand // To make an extra effort"
+    },
+    {
+    "phrase": "Ins and outs",
+    "meaning": "Secrets; the detailed or complicated facts of something // Full details"
+    },
+    {
+    "phrase": "Spick and span",
+    "meaning": "Very neat, clean, or tidy"
+    },
+    {
+    "phrase": "To get cold feet",
+    "meaning": "To experience nervousness or anxiety before one attempts to do something"
+    },
+    {
+    "phrase": "Turn a blind eye",
+    "meaning": "To ignore a situation, facts or reality"
+    },
+    {
+    "phrase": "Up in arms",
+    "meaning": "to be angry // protesting vigorously about something // In rebellion"
+    },
+    {
+    "phrase": "Wears his heart on his sleeve",
+    "meaning": "Expresses his feelings openly // To show your true emotions"
+    },
+    {
+    "phrase": "White elephant",
+    "meaning": "Costly and troublesome possession useless to its owner"
+    },
+    {
+    "phrase": "A man of letters",
+    "meaning": "Proficient in literary art // Scholar // A well educated and a wise person"
+    },
+    {
+    "phrase": "A storm in a teacup",
+    "meaning": "Big fuss over a small matter // A lot of anger/excitement or worry about trivial things"
+    },
+    {
+    "phrase": "Add insult to injury",
+    "meaning": "To further a loss with mockery to worsen an unfavourable situation // Make a bad situation even worse"
+    },
+    {
+    "phrase": "Apple of one's eye",
+    "meaning": "Someone very precious or dear"
+    },
+    {
+    "phrase": "Back to square one",
+    "meaning": "To return to the starting point // Having to start all over again"
+    },
+    {
+    "phrase": "Bad blood",
+    "meaning": "Angry feeling // enmity // ill feeling // Hostility between people"
+    },
+    {
+    "phrase": "Ball is in your court",
+    "meaning": "It is up to you to make the next decision or step // To be responsible for further action"
+    },
+    {
+    "phrase": "Black sheep",
+    "meaning": "one who is not accepted as part of a family or group because of one's bad conduct // Person with bad reputation"
+    },
+    {
+    "phrase": "Chicken-hearted",
+    "meaning": "Timid // Cowardly // Easily frightened"
+    },
+    {
+    "phrase": "Fair weather friends",
+    "meaning": "Friends in good times // supports only when easy and convenient"
+    },
+    {
+    "phrase": "For good",
+    "meaning": "Permanently // forever"
+    },
+    {
+    "phrase": "In black and white",
+    "meaning": "In writing // written down or in print"
+    },
+    {
+    "phrase": "In the nick of time",
+    "meaning": "Just in time // At the last possible moment"
+    },
+    {
+    "phrase": "Leaves you in the lurch",
+    "meaning": "Leave someone in a helpless condition // desert someone in his difficulties"
+    },
+    {
+    "phrase": "Out of the blue",
+    "meaning": "Completely unexpectedly // Suddenly and without prior warning"
+    },
+    {
+    "phrase": "Take to one's heels",
+    "meaning": "To run away // ran away in fear // ran off"
+    },
+    {
+    "phrase": "To jump on the bandwagon",
+    "meaning": "To follow popular trends // Get involved in an activity because it is likely to succeed"
+    },
+    {
+    "phrase": "A bird's eye view",
+    "meaning": "A general view from above // Aerial view // Good and comprehensive idea // An overall view"
+    },
+    {
+    "phrase": "A cakewalk",
+    "meaning": "An easy achievement // An easy task or victory"
+    },
+    {
+    "phrase": "A fool's paradise",
+    "meaning": "Being happy for foolish reasons // a state of happiness based on a person's not knowing about potential trouble"
+    },
+    {
+    "phrase": "A leopard can't change its spots",
+    "meaning": "It is impossible for one to change one's character"
+    },
+    {
+    "phrase": "A man of straw",
+    "meaning": "A man of no substance // A weak or cowardly person"
+    },
+    {
+    "phrase": "A wolf in sheep's clothing",
+    "meaning": "Hypocrite // a dangerous person pretending to be harmless"
+    },
+    {
+    "phrase": "Child's play",
+    "meaning": "Something that is very easy to do // a very easy task"
+    },
+    {
+    "phrase": "Cool as a cucumber",
+    "meaning": "Not nervous or emotional // to be calm and composed // cool as ice"
+    },
+    {
+    "phrase": "Cut corners",
+    "meaning": "To save money, time or effort when doing something by not including some parts // Do something perfunctorily so as to save time or money"
+    },
+    {
+    "phrase": "Cut the mustard",
+    "meaning": "To perform well // To succeed"
+    },
+    {
+    "phrase": "Draw a line",
+    "meaning": "To fix a limit // Accept something up to a particular point // To stop before a point where something okay gets not okay"
+    },
+    {
+    "phrase": "Feather one's own nest",
+    "meaning": "Make money in an improper way // to profit in a dishonest way // promote their own interest"
+    },
+    {
+    "phrase": "Get a taste of your own medicine",
+    "meaning": "To be given the same treatment that you have given to others"
+    },
+    {
+    "phrase": "Have bigger/other fish to fry",
+    "meaning": "Some more important work to attend to"
+    },
+    {
+    "phrase": "Herculean task",
+    "meaning": "Very difficult task"
+    },
+    {
+    "phrase": "Kick the bucket",
+    "meaning": "To die"
+    },
+    {
+    "phrase": "Kill two birds with one stone",
+    "meaning": "To serve two purposes at one time // To achieve two results with a single effort"
+    },
+    {
+    "phrase": "Nip in the bud",
+    "meaning": "To stop something at the start // To stop something before it has an opportunity to develop"
+    },
+    {
+    "phrase": "Selling like hot cakes",
+    "meaning": "To have a very good sale // To sell quickly"
+    },
+    {
+    "phrase": "Shed crocodile tears",
+    "meaning": "To pretend to be sympathetic // to pretend grief // False tears"
+    },
+    {
+    "phrase": "Take the bull by the horns",
+    "meaning": "To handle difficulties // To deal with a difficult or danger situation in a very direct or confident way"
+    },
+    {
+    "phrase": "The last straw",
+    "meaning": "Final problem in the series // A minor difficulty but coming on top of a series of difficulties, that makes a situation unbearable"
+    },
+    {
+    "phrase": "To call a spade a spade",
+    "meaning": "To be frank // Say the truth about something, even if it is not pleasant"
+    },
+    {
+    "phrase": "To keep an eye on",
+    "meaning": "To watch someone or something carefully // To be cautions"
+    },
+    {
+    "phrase": "A bird in the hand is worth two in the bush",
+    "meaning": "Having something for certain is better than the possibility of getting something better"
+    },
+    {
+    "phrase": "A bone of contention",
+    "meaning": "Cause of dispute/quarrel // Point of an argument"
+    },
+    {
+    "phrase": "A green horn",
+    "meaning": "An inexperienced man"
+    },
+    {
+    "phrase": "A mare's nest",
+    "meaning": "A difficult/complicated situation // A false invention"
+    },
+    {
+    "phrase": "Actions speak louder than words",
+    "meaning": "What you do is more important than what you say // What you do reveals the real you // Intentions can be judged by people's actions"
+    },
+    {
+    "phrase": "All and sundry",
+    "meaning": "Everybody without distinction // All included"
+    },
+    {
+    "phrase": "At a snail's pace",
+    "meaning": "Do something very slowly"
+    },
+    {
+    "phrase": "At daggers drawn",
+    "meaning": "Enemies // To be bitterly hostile // Being at loggerheads"
+    },
+    {
+    "phrase": "Backseat driver",
+    "meaning": "Interfering in affairs without having knowledge // A person who offers unsolicited advice"
+    },
+    {
+    "phrase": "Blaze a trail",
+    "meaning": "To lead the way as a pioneer // to initiate something new // To start a movement"
+    },
+    {
+    "phrase": "Break a leg",
+    "meaning": "To wish good luck // Perform well"
+    },
+    {
+    "phrase": "Cut to the chase",
+    "meaning": "To start talking about the important aspects of something // come to the point"
+    },
+    {
+    "phrase": "Eats like a horse",
+    "meaning": "Eats a lot of food"
+    },
+    {
+    "phrase": "Eye wash",
+    "meaning": "A deception // A pretence"
+    },
+    {
+    "phrase": "Have a chip on one's shoulder",
+    "meaning": "To be upset for something that happened in the past // nurse a grudge // a feeling of relentless // To be easily angered"
+    },
+    {
+    "phrase": "Hobson's choice",
+    "meaning": "No real choice at all // An apparently free choice where there is no real alternative"
+    },
+    {
+    "phrase": "In seventh heaven",
+    "meaning": "Extremely happy // in delight"
+    },
+    {
+    "phrase": "In the long run",
+    "meaning": "Eventually, after a long period of time/Ultimately // In the end"
+    },
+    {
+    "phrase": "It's Greek to me",
+    "meaning": "Incomprehensible // I cannot understand anything"
+    },
+    {
+    "phrase": "Jump the gun",
+    "meaning": "Start something too soon or act hastily // said it before it was the right time"
+    },
+    {
+    "phrase": "Let sleeping dogs lie",
+    "meaning": "Do not bring up an old controversial issue // To leave things as they are in order to avoid trouble"
+    },
+    {
+    "phrase": "Live from hand to mouth",
+    "meaning": "To have enough money to live on and nothing extra // miserably // consuming daily what little is earned"
+    },
+    {
+    "phrase": "Make no bones about",
+    "meaning": "Did not have any hesitation in // To state something clearly"
+    },
+    {
+    "phrase": "On tenterhooks",
+    "meaning": "In suspense and anxiety // anxious"
+    },
+    {
+    "phrase": "Play it by ear",
+    "meaning": "To do something without special preparation // To improvise"
+    },
+    {
+      "phrase": "Pour/Throw cold water",
+      "meaning": "To discourage by showing indifference"
+      },
+      {
+      "phrase": "To burn one's fingers",
+      "meaning": "To suffer unpleasant consequences as a result of one's actions"
+      },
+      {
+      "phrase": "To cry wolf",
+      "meaning": "To ask for help when you don't need it // To raise a false alarm"
+      },
+      {
+      "phrase": "To go/run around in circles",
+      "meaning": "To waste one's time and energy doing trivial things // To keep doing something without achieving much // Make no progress in an argument or discussion"
+      },
+      {
+      "phrase": "To keep the wolf away from the door",
+      "meaning": "To keep off starvation"
+      },
+      {
+      "phrase": "To make up one's mind",
+      "meaning": "To decide what to do // Decide firmly"
+      },
+      {
+      "phrase": "To put a spoke in one's wheel",
+      "meaning": "To put a difficulty in the way of progress // thwarted in the execution of the plan"
+      },
+      {
+      "phrase": "To take to task",
+      "meaning": "Punished // to rebuke // to scold someone // get an official reprimand"
+      },
+      {
+      "phrase": "To turn over a new leaf",
+      "meaning": "To change one's behaviour for better // To begin again"
+      },
+      {
+      "phrase": "A close-fisted person",
+      "meaning": "A miser"
+      },
+      {
+      "phrase": "A sea change",
+      "meaning": "A profound or notable transformation // Complete transformation"
+      },
+      {
+      "phrase": "A wet blanket",
+      "meaning": "A person who discourages enjoyment or enthusiasm // someone who prevents other people from having fun"
+      },
+      {
+      "phrase": "Above board",
+      "meaning": "Honest and frank // without any secret"
+      },
+      {
+      "phrase": "Achilles' heel",
+      "meaning": "A weakness or vulnerable point"
+      },
+      {
+      "phrase": "Against the clock",
+      "meaning": "Work very fast to complete something within a deadline // work in great hurry, as fast as possible"
+      },
+      {
+      "phrase": "Be in the red",
+      "meaning": "To be in a loss or debt // To owe money to a bank"
+      },
+      {
+      "phrase": "Bed of roses",
+      "meaning": "A pleasant situation // An enjoyable state"
+      },
+      {
+      "phrase": "Birds of the same feather",
+      "meaning": "Persons of same character or interests // similar in many ways"
+      },
+      {
+      "phrase": "Bite the dust",
+      "meaning": "Suffer a defeat // to die"
+      },
+      {
+      "phrase": "Carry the day",
+      "meaning": "win a victory // becomes the winner"
+      },
+      {
+      "phrase": "Catch a tartar",
+      "meaning": "To deal with someone or something that proves unexpectedly troublesome or powerful // To catch a dangerous person"
+      },
+      {
+      "phrase": "Cross that bridge when you come to it",
+      "meaning": "Deal with something only when necessary // deal with a problem when and if it arises"
+      },
+      {
+      "phrase": "Cross your fingers",
+      "meaning": "To hope that things will happen in the way that you want them to // To wish for good luck or success"
+      },
+      {
+      "phrase": "Cry for the moon",
+      "meaning": "To make an impractical, unreasonable or unattainable request // To aspire to possess something beyond one's reach"
+      },
+      {
+      "phrase": "Don't (or never) judge a book by its cover",
+      "meaning": "We should not judge something primarily by its outward appearance"
+      },
+      {
+      "phrase": "Donkey's years",
+      "meaning": "A very long time"
+      },
+      {
+      "phrase": "Easier said than done",
+      "meaning": "Be more easily talked about than put into practice // Not as easy as it appears to be"
+      },
+      {
+      "phrase": "Fall flat",
+      "meaning": "To fail to produce intended effect // to have no effect // Unsuccessful"
+      },
+      {
+      "phrase": "Feather in one's cap",
+      "meaning": "A new and additional distinction // an accomplishment to be proud of"
+      },
+      {
+      "phrase": "Forty winks",
+      "meaning": "A short nap/sleep during the day"
+      },
+      {
+      "phrase": "From rags to riches",
+      "meaning": "To go from very poor to being very wealthy"
+      },
+      {
+      "phrase": "Get on somebody's nerves",
+      "meaning": "To be an irritant // annoys me"
+      },
+      {
+      "phrase": "Give a piece of one's mind",
+      "meaning": "To rebuke someone strongly // speaking sharply // scolding // To reprimand"
+      },
+      {
+      "phrase": "Go down like a lead balloon",
+      "meaning": "To be received badly by an audience"
+      },
+      {
+      "phrase": "Go to the dogs",
+      "meaning": "To be ruined // Deteriorate shockingly"
+      },
+      {
+      "phrase": "Green thumb",
+      "meaning": "To have a natural interest in gardening"
+      },
+      {
+      "phrase": "Hue and cry",
+      "meaning": "A noisy expression of anger // Protest // loud clamour"
+      },
+      {
+      "phrase": "Ill at ease",
+      "meaning": "to feel uncomfortable or worried in a situation"
+      },
+      {
+      "phrase": "Learn/Know the ropes",
+      "meaning": "Learn to do particular jobs // Be informed about the details // To know how to do a job or task properly"
+      },
+      {
+      "phrase": "Lend me your ear",
+      "meaning": "To politely ask for someone's full attention // to pay attention to"
+      },
+      {
+      "phrase": "Lose your marbles",
+      "meaning": "To become mentally deficient // Become insane"
+      },
+      {
+      "phrase": "On thin ice",
+      "meaning": "In a precarious/dangerous or risky situation"
+      }
+  ]

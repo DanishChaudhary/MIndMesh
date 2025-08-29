@@ -1,0 +1,52 @@
+[
+  {
+    "word": "Abundant",
+    "antonym1": "Scarce",
+    "antonym2": "Limited",
+    "antonym3": "Sparse",
+    "definition": "Existing in large quantities; plentiful"
+  },
+  {
+    "word": "Accept",
+    "antonym1": "Reject",
+    "antonym2": "Refuse",
+    "antonym3": "Decline",
+    "definition": "To consent to receive or undertake"
+  },
+  {
+    "word": "Accurate",
+    "antonym1": "Inaccurate",
+    "antonym2": "Wrong",
+    "antonym3": "Imprecise",
+    "definition": "Correct in all details; exact"
+  },
+  {
+    "word": "Active",
+    "antonym1": "Passive",
+    "antonym2": "Inactive",
+    "antonym3": "Idle",
+    "definition": "Engaging in activity; characterized by energetic work"
+  },
+  {
+    "word": "Advance",
+    "antonym1": "Retreat",
+    "antonym2": "Withdraw",
+    "antonym3": "Recede",
+    "definition": "To move forward in a purposeful way"
+  },
+  {
+    "word": "Advantage",
+    "antonym1": "Disadvantage",
+    "definition": "A condition or circumstance that puts one in a favorable position"
+  },
+  {
+    "word": "Agree",
+    "antonym1": "Disagree",
+    "definition": "To have the same opinion about something"
+  },
+  {
+    "word": "Export",
+    "antonym1": "Import",
+    "definition": "To send goods or services to another country for sale"
+  }
+]

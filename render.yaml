@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: blackbook-vocab
+    env: node
+    plan: free
+    buildCommand: npm install --production=false && cd client && npm install --production=false && npm run build && cd ..
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: SITE_BASE_URL
+        sync: false
+      - key: PHONEPE_HOST_URL
+        value: https://api-preprod.phonepe.com/apis/pg-sandbox
+      - key: PHONEPE_MERCHANT_ID
+        sync: false
+      - key: SALT_KEY
+        sync: false
+      - key: SALT_INDEX
+        value: "1"
+    autoDeploy: true
+    branch: main

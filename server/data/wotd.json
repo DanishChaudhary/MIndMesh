@@ -1,0 +1,1471 @@
+[
+  {
+    "date": "2025-08-21",
+    "word": "Aberrant",
+    "pos": "Adj.",
+    "definition": "Departing from an accepted standard; deviant",
+    "example": "The aberrant behavior of the student concerned the teachers.",
+    "synonyms": [
+      "deviant",
+      "abnormal",
+      "atypical"
+    ],
+    "antonyms": [
+      "normal",
+      "typical",
+      "standard"
+    ]
+  },
+  {
+    "date": "2025-01-22",
+    "word": "Cogent",
+    "pos": "Adj.",
+    "definition": "Clear, logical, and convincing",
+    "example": "She presented a cogent argument for the new policy.",
+    "synonyms": [
+      "compelling",
+      "convincing",
+      "persuasive"
+    ],
+    "antonyms": [
+      "weak",
+      "unconvincing",
+      "illogical"
+    ]
+  },
+  {
+    "date": "2025-01-23",
+    "word": "Ephemeral",
+    "pos": "Adj.",
+    "definition": "Lasting for a very short time",
+    "example": "The beauty of cherry blossoms is ephemeral.",
+    "synonyms": [
+      "transient",
+      "fleeting",
+      "temporary"
+    ],
+    "antonyms": [
+      "permanent",
+      "lasting",
+      "enduring"
+    ]
+  },
+  {
+    "date": "2025-01-24",
+    "word": "Gregarious",
+    "pos": "Adj.",
+    "definition": "Fond of the company of others; sociable",
+    "example": "His gregarious nature made him popular at parties.",
+    "synonyms": [
+      "sociable",
+      "outgoing",
+      "extroverted"
+    ],
+    "antonyms": [
+      "antisocial",
+      "introverted",
+      "reclusive"
+    ]
+  },
+  {
+    "date": "2025-01-25",
+    "word": "Lucid",
+    "pos": "Adj.",
+    "definition": "Expressed clearly; easy to understand",
+    "example": "The professor gave a lucid explanation of the complex theory.",
+    "synonyms": [
+      "clear",
+      "coherent",
+      "intelligible"
+    ],
+    "antonyms": [
+      "confusing",
+      "unclear",
+      "muddled"
+    ]
+  },
+  {
+    "date": "2025-01-26",
+    "word": "Pragmatic",
+    "pos": "Adj.",
+    "definition": "Dealing with things sensibly and realistically",
+    "example": "She took a pragmatic approach to solving the problem.",
+    "synonyms": [
+      "practical",
+      "realistic",
+      "sensible"
+    ],
+    "antonyms": [
+      "idealistic",
+      "impractical",
+      "unrealistic"
+    ]
+  },
+  {
+    "date": "2025-01-27",
+    "word": "Verbose",
+    "pos": "Adj.",
+    "definition": "Using or expressed in more words than are needed",
+    "example": "His verbose speech bored the audience.",
+    "synonyms": [
+      "wordy",
+      "long-winded",
+      "prolix"
+    ],
+    "antonyms": [
+      "concise",
+      "brief",
+      "succinct"
+    ]
+  },
+  {
+    "date": "2025-08-28",
+    "word": "Aberrant",
+    "pos": "Adj.",
+    "definition": "Departing from an accepted standard; deviant",
+    "example": "The aberrant behavior of the student concerned the teachers.",
+    "synonyms": [
+      "deviant",
+      "abnormal"
+    ],
+    "antonyms": [
+      "normal",
+      "typical"
+    ]
+  },
+  {
+    "date": "2025-08-29",
+    "word": "Cogent",
+    "pos": "Adj.",
+    "definition": "Clear, logical, and convincing",
+    "example": "She presented a cogent argument for the new policy.",
+    "synonyms": [
+      "convincing",
+      "compelling"
+    ],
+    "antonyms": [
+      "weak",
+      "unconvincing"
+    ]
+  },
+  {
+    "date": "2025-08-30",
+    "word": "Ephemeral",
+    "pos": "Adj.",
+    "definition": "Lasting for a very short time",
+    "example": "The beauty of cherry blossoms is ephemeral.",
+    "synonyms": [
+      "fleeting",
+      "transient"
+    ],
+    "antonyms": [
+      "permanent",
+      "lasting"
+    ]
+  },
+  {
+    "date": "2025-08-31",
+    "word": "Gregarious",
+    "pos": "Adj.",
+    "definition": "Fond of the company of others; sociable",
+    "example": "His gregarious nature made him popular at parties.",
+    "synonyms": [
+      "sociable",
+      "outgoing"
+    ],
+    "antonyms": [
+      "antisocial",
+      "introverted"
+    ]
+  },
+  {
+    "date": "2025-09-01",
+    "word": "Lucid",
+    "pos": "Adj.",
+    "definition": "Expressed clearly; easy to understand",
+    "example": "The professor gave a lucid explanation of the complex theory.",
+    "synonyms": [
+      "clear",
+      "coherent"
+    ],
+    "antonyms": [
+      "confusing",
+      "unclear"
+    ]
+  },
+  {
+    "date": "2025-09-02",
+    "word": "Pragmatic",
+    "pos": "Adj.",
+    "definition": "Dealing with things sensibly and realistically",
+    "example": "She took a pragmatic approach to solving the problem.",
+    "synonyms": [
+      "practical",
+      "realistic"
+    ],
+    "antonyms": [
+      "idealistic",
+      "impractical"
+    ]
+  },
+  {
+    "date": "2025-09-03",
+    "word": "Verbose",
+    "pos": "Adj.",
+    "definition": "Using more words than necessary",
+    "example": "His verbose speech bored the audience.",
+    "synonyms": [
+      "wordy",
+      "long-winded"
+    ],
+    "antonyms": [
+      "concise",
+      "succinct"
+    ]
+  },
+  {
+    "date": "2025-09-04",
+    "word": "Ameliorate",
+    "pos": "V.",
+    "definition": "To make something better or more tolerable",
+    "example": "Measures were taken to ameliorate the living conditions.",
+    "synonyms": [
+      "improve",
+      "enhance"
+    ],
+    "antonyms": [
+      "worsen",
+      "aggravate"
+    ]
+  },
+  {
+    "date": "2025-09-05",
+    "word": "Ambiguous",
+    "pos": "Adj.",
+    "definition": "Open to more than one interpretation; unclear",
+    "example": "The instruction was ambiguous and caused confusion.",
+    "synonyms": [
+      "unclear",
+      "vague"
+    ],
+    "antonyms": [
+      "clear",
+      "explicit"
+    ]
+  },
+  {
+    "date": "2025-09-06",
+    "word": "Anomaly",
+    "pos": "N.",
+    "definition": "Something that deviates from the norm; irregularity",
+    "example": "The sudden drop in sales was an anomaly for the company.",
+    "synonyms": [
+      "aberration",
+      "irregularity"
+    ],
+    "antonyms": [
+      "normality",
+      "regularity"
+    ]
+  },
+  {
+    "date": "2025-09-07",
+    "word": "Ardent",
+    "pos": "Adj.",
+    "definition": "Very enthusiastic or passionate",
+    "example": "He is an ardent supporter of the team.",
+    "synonyms": [
+      "passionate",
+      "fervent"
+    ],
+    "antonyms": [
+      "indifferent",
+      "apathetic"
+    ]
+  },
+  {
+    "date": "2025-09-08",
+    "word": "Austere",
+    "pos": "Adj.",
+    "definition": "Severe or strict in manner or appearance; simple",
+    "example": "The monastery had an austere lifestyle.",
+    "synonyms": [
+      "severe",
+      "stern"
+    ],
+    "antonyms": [
+      "lavish",
+      "indulgent"
+    ]
+  },
+  {
+    "date": "2025-09-09",
+    "word": "Benevolent",
+    "pos": "Adj.",
+    "definition": "Well meaning and kindly",
+    "example": "The benevolent donor funded the school building.",
+    "synonyms": [
+      "kind",
+      "charitable"
+    ],
+    "antonyms": [
+      "malevolent",
+      "unkind"
+    ]
+  },
+  {
+    "date": "2025-09-10",
+    "word": "Belligerent",
+    "pos": "Adj.",
+    "definition": "Hostile and aggressive",
+    "example": "The belligerent tone of the speaker alarmed the audience.",
+    "synonyms": [
+      "hostile",
+      "aggressive"
+    ],
+    "antonyms": [
+      "peaceful",
+      "friendly"
+    ]
+  },
+  {
+    "date": "2025-09-11",
+    "word": "Candid",
+    "pos": "Adj.",
+    "definition": "Truthful and straightforward; frank",
+    "example": "She gave a candid assessment of the situation.",
+    "synonyms": [
+      "honest",
+      "frank"
+    ],
+    "antonyms": [
+      "guarded",
+      "dishonest"
+    ]
+  },
+  {
+    "date": "2025-09-12",
+    "word": "Clandestine",
+    "pos": "Adj.",
+    "definition": "Kept secret or done secretly",
+    "example": "They held clandestine meetings after hours.",
+    "synonyms": [
+      "secret",
+      "covert"
+    ],
+    "antonyms": [
+      "open",
+      "public"
+    ]
+  },
+  {
+    "date": "2025-09-13",
+    "word": "Concise",
+    "pos": "Adj.",
+    "definition": "Giving a lot of information clearly in few words",
+    "example": "Keep your answers concise in the exam.",
+    "synonyms": [
+      "brief",
+      "succinct"
+    ],
+    "antonyms": [
+      "verbose",
+      "wordy"
+    ]
+  },
+  {
+    "date": "2025-09-14",
+    "word": "Conundrum",
+    "pos": "N.",
+    "definition": "A confusing and difficult problem or question",
+    "example": "The puzzle presented a real conundrum.",
+    "synonyms": [
+      "puzzle",
+      "riddle"
+    ],
+    "antonyms": [
+      "solution",
+      "answer"
+    ]
+  },
+  {
+    "date": "2025-09-15",
+    "word": "Corroborate",
+    "pos": "V.",
+    "definition": "To confirm or give support to (a statement, theory, or finding)",
+    "example": "The witness corroborated the defendant's alibi.",
+    "synonyms": [
+      "confirm",
+      "verify"
+    ],
+    "antonyms": [
+      "contradict",
+      "disprove"
+    ]
+  },
+  {
+    "date": "2025-09-16",
+    "word": "Credulous",
+    "pos": "Adj.",
+    "definition": "Having or showing too great a readiness to believe things",
+    "example": "Credulous people often fall for scams.",
+    "synonyms": [
+      "gullible",
+      "naive"
+    ],
+    "antonyms": [
+      "skeptical",
+      "doubtful"
+    ]
+  },
+  {
+    "date": "2025-09-17",
+    "word": "Cursory",
+    "pos": "Adj.",
+    "definition": "Hasty and therefore not thorough or detailed",
+    "example": "He gave the report only a cursory glance.",
+    "synonyms": [
+      "brief",
+      "superficial"
+    ],
+    "antonyms": [
+      "thorough",
+      "detailed"
+    ]
+  },
+  {
+    "date": "2025-09-18",
+    "word": "Deleterious",
+    "pos": "Adj.",
+    "definition": "Causing harm or damage",
+    "example": "Smoking has deleterious effects on health.",
+    "synonyms": [
+      "harmful",
+      "detrimental"
+    ],
+    "antonyms": [
+      "beneficial",
+      "helpful"
+    ]
+  },
+  {
+    "date": "2025-09-19",
+    "word": "Demure",
+    "pos": "Adj.",
+    "definition": "Reserved, modest, and shy",
+    "example": "Her demure behavior suited the formal event.",
+    "synonyms": [
+      "modest",
+      "reserved"
+    ],
+    "antonyms": [
+      "bold",
+      "outgoing"
+    ]
+  },
+  {
+    "date": "2025-09-20",
+    "word": "Deride",
+    "pos": "V.",
+    "definition": "To express contempt for; ridicule",
+    "example": "They derided his suggestion as impractical.",
+    "synonyms": [
+      "mock",
+      "ridicule"
+    ],
+    "antonyms": [
+      "praise",
+      "commend"
+    ]
+  },
+  {
+    "date": "2025-09-21",
+    "word": "Diligent",
+    "pos": "Adj.",
+    "definition": "Showing care and conscientiousness in one's work or duties",
+    "example": "A diligent student studies daily.",
+    "synonyms": [
+      "hardworking",
+      "assiduous"
+    ],
+    "antonyms": [
+      "lazy",
+      "idle"
+    ]
+  },
+  {
+    "date": "2025-09-22",
+    "word": "Discrepancy",
+    "pos": "N.",
+    "definition": "A lack of compatibility or similarity between two or more facts",
+    "example": "There was a discrepancy between the accounts.",
+    "synonyms": [
+      "difference",
+      "inconsistency"
+    ],
+    "antonyms": [
+      "agreement",
+      "consistency"
+    ]
+  },
+  {
+    "date": "2025-09-23",
+    "word": "Disseminate",
+    "pos": "V.",
+    "definition": "To spread or disperse widely (information, ideas)",
+    "example": "The organization disseminated the new guidelines to all staff.",
+    "synonyms": [
+      "spread",
+      "distribute"
+    ],
+    "antonyms": [
+      "collect",
+      "withhold"
+    ]
+  },
+  {
+    "date": "2025-09-24",
+    "word": "Dubious",
+    "pos": "Adj.",
+    "definition": "Hesitating or doubting; not to be relied upon",
+    "example": "He was dubious about the claim.",
+    "synonyms": [
+      "doubtful",
+      "uncertain"
+    ],
+    "antonyms": [
+      "certain",
+      "sure"
+    ]
+  },
+  {
+    "date": "2025-09-25",
+    "word": "Elicit",
+    "pos": "V.",
+    "definition": "To draw out (a response, answer, or fact) from someone",
+    "example": "The question elicited a thoughtful reply.",
+    "synonyms": [
+      "evoke",
+      "bring out"
+    ],
+    "antonyms": [
+      "suppress",
+      "stifle"
+    ]
+  },
+  {
+    "date": "2025-09-26",
+    "word": "Eloquent",
+    "pos": "Adj.",
+    "definition": "Fluent or persuasive in speaking or writing",
+    "example": "Her speech was eloquent and moving.",
+    "synonyms": [
+      "articulate",
+      "expressive"
+    ],
+    "antonyms": [
+      "inarticulate",
+      "awkward"
+    ]
+  },
+  {
+    "date": "2025-09-27",
+    "word": "Enigma",
+    "pos": "N.",
+    "definition": "A person or thing that is mysterious or difficult to understand",
+    "example": "The origins of the artifact remain an enigma.",
+    "synonyms": [
+      "mystery",
+      "puzzle"
+    ],
+    "antonyms": [
+      "explanation",
+      "clarity"
+    ]
+  },
+  {
+    "date": "2025-09-28",
+    "word": "Eradicate",
+    "pos": "V.",
+    "definition": "To destroy completely; put an end to",
+    "example": "Efforts were made to eradicate the disease.",
+    "synonyms": [
+      "eliminate",
+      "abolish"
+    ],
+    "antonyms": [
+      "establish",
+      "create"
+    ]
+  },
+  {
+    "date": "2025-09-29",
+    "word": "Esoteric",
+    "pos": "Adj.",
+    "definition": "Intended for or understood by only a small group of people",
+    "example": "The text contained esoteric philosophical ideas.",
+    "synonyms": [
+      "obscure",
+      "arcane"
+    ],
+    "antonyms": [
+      "common",
+      "popular"
+    ]
+  },
+  {
+    "date": "2025-09-30",
+    "word": "Exacerbate",
+    "pos": "V.",
+    "definition": "To make a problem or negative feeling worse",
+    "example": "His comments only exacerbated the tension.",
+    "synonyms": [
+      "worsen",
+      "aggravate"
+    ],
+    "antonyms": [
+      "alleviate",
+      "mitigate"
+    ]
+  },
+  {
+    "date": "2025-10-01",
+    "word": "Exonerate",
+    "pos": "V.",
+    "definition": "To clear someone of blame or wrongdoing",
+    "example": "The evidence served to exonerate the accused.",
+    "synonyms": [
+      "acquit",
+      "absolve"
+    ],
+    "antonyms": [
+      "convict",
+      "blame"
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "word": "Fallacious",
+    "pos": "Adj.",
+    "definition": "Based on a mistaken belief; logically unsound",
+    "example": "That argument is fallacious and cannot be accepted.",
+    "synonyms": [
+      "false",
+      "misleading"
+    ],
+    "antonyms": [
+      "valid",
+      "sound"
+    ]
+  },
+  {
+    "date": "2025-10-03",
+    "word": "Fervent",
+    "pos": "Adj.",
+    "definition": "Having or displaying a passionate intensity",
+    "example": "She was a fervent advocate for education reform.",
+    "synonyms": [
+      "ardent",
+      "passionate"
+    ],
+    "antonyms": [
+      "apathetic",
+      "indifferent"
+    ]
+  },
+  {
+    "date": "2025-10-04",
+    "word": "Fortuitous",
+    "pos": "Adj.",
+    "definition": "Happening by accident or chance; fortunate",
+    "example": "It was fortuitous that he found the lost document.",
+    "synonyms": [
+      "accidental",
+      "lucky"
+    ],
+    "antonyms": [
+      "intentional",
+      "planned"
+    ]
+  },
+  {
+    "date": "2025-10-05",
+    "word": "Frugal",
+    "pos": "Adj.",
+    "definition": "Sparing or economical regarding money or food",
+    "example": "They lived a frugal lifestyle to save for the future.",
+    "synonyms": [
+      "thrifty",
+      "economical"
+    ],
+    "antonyms": [
+      "extravagant",
+      "wasteful"
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "word": "Garrulous",
+    "pos": "Adj.",
+    "definition": "Excessively talkative, especially on trivial matters",
+    "example": "The garrulous guide spoke non-stop.",
+    "synonyms": [
+      "talkative",
+      "loquacious"
+    ],
+    "antonyms": [
+      "taciturn",
+      "silent"
+    ]
+  },
+  {
+    "date": "2025-10-07",
+    "word": "Haphazard",
+    "pos": "Adj.",
+    "definition": "Lacking any obvious principle of organization; random",
+    "example": "The files were arranged in a haphazard way.",
+    "synonyms": [
+      "random",
+      "careless"
+    ],
+    "antonyms": [
+      "organized",
+      "systematic"
+    ]
+  },
+  {
+    "date": "2025-10-08",
+    "word": "Hubris",
+    "pos": "N.",
+    "definition": "Excessive pride or self-confidence",
+    "example": "His hubris led to poor decisions.",
+    "synonyms": [
+      "arrogance",
+      "conceit"
+    ],
+    "antonyms": [
+      "humility",
+      "modesty"
+    ]
+  },
+  {
+    "date": "2025-10-09",
+    "word": "Impetuous",
+    "pos": "Adj.",
+    "definition": "Acting quickly and without thought or care; impulsive",
+    "example": "An impetuous decision cost them dearly.",
+    "synonyms": [
+      "rash",
+      "impulsive"
+    ],
+    "antonyms": [
+      "cautious",
+      "considered"
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "word": "Implicit",
+    "pos": "Adj.",
+    "definition": "Implied though not plainly expressed; tacit",
+    "example": "There was implicit trust between the partners.",
+    "synonyms": [
+      "implied",
+      "tacit"
+    ],
+    "antonyms": [
+      "explicit",
+      "clear"
+    ]
+  },
+  {
+    "date": "2025-10-11",
+    "word": "Impertinent",
+    "pos": "Adj.",
+    "definition": "Not showing proper respect; rude",
+    "example": "His impertinent remark annoyed the teacher.",
+    "synonyms": [
+      "rude",
+      "insolent"
+    ],
+    "antonyms": [
+      "polite",
+      "respectful"
+    ]
+  },
+  {
+    "date": "2025-10-12",
+    "word": "Impeccable",
+    "pos": "Adj.",
+    "definition": "In accordance with the highest standards; faultless",
+    "example": "Her performance was impeccable.",
+    "synonyms": [
+      "flawless",
+      "perfect"
+    ],
+    "antonyms": [
+      "flawed",
+      "imperfect"
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "word": "Impediment",
+    "pos": "N.",
+    "definition": "A hindrance or obstruction in doing something",
+    "example": "Poor infrastructure is an impediment to growth.",
+    "synonyms": [
+      "obstacle",
+      "barrier"
+    ],
+    "antonyms": [
+      "aid",
+      "assistance"
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "word": "Incongruous",
+    "pos": "Adj.",
+    "definition": "Not in harmony or keeping with the surroundings; inappropriate",
+    "example": "His jokes seemed incongruous at the solemn event.",
+    "synonyms": [
+      "incompatible",
+      "unsuitable"
+    ],
+    "antonyms": [
+      "fitting",
+      "appropriate"
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "word": "Indigenous",
+    "pos": "Adj.",
+    "definition": "Originating or occurring naturally in a particular place; native",
+    "example": "These plant species are indigenous to the region.",
+    "synonyms": [
+      "native",
+      "local"
+    ],
+    "antonyms": [
+      "foreign",
+      "alien"
+    ]
+  },
+  {
+    "date": "2025-10-16",
+    "word": "Innate",
+    "pos": "Adj.",
+    "definition": "Inborn; natural",
+    "example": "She had an innate sense of direction.",
+    "synonyms": [
+      "inborn",
+      "inherent"
+    ],
+    "antonyms": [
+      "acquired",
+      "learned"
+    ]
+  },
+  {
+    "date": "2025-10-17",
+    "word": "Insidious",
+    "pos": "Adj.",
+    "definition": "Proceeding in a gradual, subtle way but with harmful effects",
+    "example": "Insidious disease progression made diagnosis difficult.",
+    "synonyms": [
+      "treacherous",
+      "sly"
+    ],
+    "antonyms": [
+      "harmless",
+      "benign"
+    ]
+  },
+  {
+    "date": "2025-10-18",
+    "word": "Integral",
+    "pos": "Adj.",
+    "definition": "Necessary to make a whole complete; essential",
+    "example": "Trust is integral to a good partnership.",
+    "synonyms": [
+      "essential",
+      "fundamental"
+    ],
+    "antonyms": [
+      "nonessential",
+      "optional"
+    ]
+  },
+  {
+    "date": "2025-10-19",
+    "word": "Interim",
+    "pos": "Adj.",
+    "definition": "Temporary and intended to be used or accepted until something permanent exists",
+    "example": "An interim report was published before the final one.",
+    "synonyms": [
+      "temporary",
+      "provisional"
+    ],
+    "antonyms": [
+      "permanent",
+      "lasting"
+    ]
+  },
+  {
+    "date": "2025-10-20",
+    "word": "Intuitive",
+    "pos": "Adj.",
+    "definition": "Using or based on what one feels to be true without conscious reasoning",
+    "example": "Her intuitive choice proved correct.",
+    "synonyms": [
+      "instinctive",
+      "perceptive"
+    ],
+    "antonyms": [
+      "logical",
+      "analytical"
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "word": "Inundate",
+    "pos": "V.",
+    "definition": "To overwhelm (someone) with things or people to be dealt with; flood",
+    "example": "The office was inundated with applications.",
+    "synonyms": [
+      "overwhelm",
+      "flood"
+    ],
+    "antonyms": [
+      "drain",
+      "empty"
+    ]
+  },
+  {
+    "date": "2025-10-22",
+    "word": "Ironic",
+    "pos": "Adj.",
+    "definition": "Using words to convey a meaning that is the opposite of its literal meaning; unexpected in a striking way",
+    "example": "It was ironic that the fire station burned down.",
+    "synonyms": [
+      "contradictory",
+      "sarcastic"
+    ],
+    "antonyms": [
+      "straightforward",
+      "sincere"
+    ]
+  },
+  {
+    "date": "2025-10-23",
+    "word": "Judicious",
+    "pos": "Adj.",
+    "definition": "Having, showing, or done with good judgment or sense",
+    "example": "A judicious use of resources is required.",
+    "synonyms": [
+      "wise",
+      "sensible"
+    ],
+    "antonyms": [
+      "foolish",
+      "rash"
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "word": "Laconic",
+    "pos": "Adj.",
+    "definition": "Using very few words; concise to the point of seeming rude or mysterious",
+    "example": "His laconic reply ended the discussion.",
+    "synonyms": [
+      "brief",
+      "terse"
+    ],
+    "antonyms": [
+      "wordy",
+      "verbose"
+    ]
+  },
+  {
+    "date": "2025-10-25",
+    "word": "Laudable",
+    "pos": "Adj.",
+    "definition": "Deserving praise and commendation",
+    "example": "Her efforts to help the community were laudable.",
+    "synonyms": [
+      "praiseworthy",
+      "commendable"
+    ],
+    "antonyms": [
+      "discreditable",
+      "shameful"
+    ]
+  },
+  {
+    "date": "2025-10-26",
+    "word": "Lethargic",
+    "pos": "Adj.",
+    "definition": "Affected by lethargy; sluggish and apathetic",
+    "example": "After the long flight he felt lethargic.",
+    "synonyms": [
+      "sluggish",
+      "inactive"
+    ],
+    "antonyms": [
+      "energetic",
+      "active"
+    ]
+  },
+  {
+    "date": "2025-10-27",
+    "word": "Magnanimous",
+    "pos": "Adj.",
+    "definition": "Very generous or forgiving, especially toward a rival or someone less powerful",
+    "example": "He was magnanimous in victory.",
+    "synonyms": [
+      "generous",
+      "noble"
+    ],
+    "antonyms": [
+      "petty",
+      "vengeful"
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "word": "Malevolent",
+    "pos": "Adj.",
+    "definition": "Having or showing a wish to do evil to others",
+    "example": "The plot was driven by a malevolent villain.",
+    "synonyms": [
+      "malicious",
+      "hostile"
+    ],
+    "antonyms": [
+      "benevolent",
+      "kind"
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "word": "Mitigate",
+    "pos": "V.",
+    "definition": "To make less severe, serious, or painful",
+    "example": "Measures were taken to mitigate the impact of the storm.",
+    "synonyms": [
+      "alleviate",
+      "lessen"
+    ],
+    "antonyms": [
+      "aggravate",
+      "worsen"
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "word": "Mundane",
+    "pos": "Adj.",
+    "definition": "Lacking interest or excitement; dull; of this earthly world rather than a heavenly one",
+    "example": "He longed to escape his mundane routine.",
+    "synonyms": [
+      "ordinary",
+      "boring"
+    ],
+    "antonyms": [
+      "extraordinary",
+      "unusual"
+    ]
+  },
+  {
+    "date": "2025-10-31",
+    "word": "Nefarious",
+    "pos": "Adj.",
+    "definition": "Wicked or criminal",
+    "example": "The organization was involved in nefarious activities.",
+    "synonyms": [
+      "wicked",
+      "villainous"
+    ],
+    "antonyms": [
+      "honorable",
+      "virtuous"
+    ]
+  },
+  {
+    "date": "2025-11-01",
+    "word": "Negligible",
+    "pos": "Adj.",
+    "definition": "So small or unimportant as to be not worth considering; insignificant",
+    "example": "The cost was negligible compared to the benefit.",
+    "synonyms": [
+      "insignificant",
+      "trivial"
+    ],
+    "antonyms": [
+      "substantial",
+      "significant"
+    ]
+  },
+  {
+    "date": "2025-11-02",
+    "word": "Obdurate",
+    "pos": "Adj.",
+    "definition": "Stubbornly refusing to change one's opinion or course of action",
+    "example": "Despite pleas, he remained obdurate.",
+    "synonyms": [
+      "stubborn",
+      "unyielding"
+    ],
+    "antonyms": [
+      "flexible",
+      "yielding"
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "word": "Obscure",
+    "pos": "Adj.",
+    "definition": "Not discovered or known about; uncertain; not clearly expressed or easily understood",
+    "example": "The reference was obscure and hard to trace.",
+    "synonyms": [
+      "unclear",
+      "unknown"
+    ],
+    "antonyms": [
+      "clear",
+      "obvious"
+    ]
+  },
+  {
+    "date": "2025-11-04",
+    "word": "Obsolete",
+    "pos": "Adj.",
+    "definition": "Out of date; no longer in use or useful",
+    "example": "The technology quickly became obsolete.",
+    "synonyms": [
+      "outdated",
+      "archaic"
+    ],
+    "antonyms": [
+      "current",
+      "modern"
+    ]
+  },
+  {
+    "date": "2025-11-05",
+    "word": "Obstinate",
+    "pos": "Adj.",
+    "definition": "Stubbornly refusing to change one's opinion or chosen course of action",
+    "example": "He was obstinate and would not listen to advice.",
+    "synonyms": [
+      "stubborn",
+      "inflexible"
+    ],
+    "antonyms": [
+      "compliant",
+      "yielding"
+    ]
+  },
+  {
+    "date": "2025-11-06",
+    "word": "Onerous",
+    "pos": "Adj.",
+    "definition": "Involving a great deal of effort, difficulty, or responsibility; burdensome",
+    "example": "The new regulations imposed an onerous burden on small businesses.",
+    "synonyms": [
+      "burdensome",
+      "oppressive"
+    ],
+    "antonyms": [
+      "easy",
+      "light"
+    ]
+  },
+  {
+    "date": "2025-11-07",
+    "word": "Orthodox",
+    "pos": "Adj.",
+    "definition": "Conforming to what is generally or traditionally accepted as right or true; conventional",
+    "example": "He took a more orthodox approach to the problem.",
+    "synonyms": [
+      "traditional",
+      "conventional"
+    ],
+    "antonyms": [
+      "unconventional",
+      "radical"
+    ]
+  },
+  {
+    "date": "2025-11-08",
+    "word": "Ostentatious",
+    "pos": "Adj.",
+    "definition": "Characterized by vulgar or pretentious display; designed to impress",
+    "example": "Her ostentatious jewelry attracted attention.",
+    "synonyms": [
+      "showy",
+      "pretentious"
+    ],
+    "antonyms": [
+      "modest",
+      "unassuming"
+    ]
+  },
+  {
+    "date": "2025-11-09",
+    "word": "Paradox",
+    "pos": "N.",
+    "definition": "A statement that contradicts itself or a situation that seems to defy logic yet may be true",
+    "example": "The paradox of thrift describes saving that harms the economy.",
+    "synonyms": [
+      "contradiction",
+      "inconsistency"
+    ],
+    "antonyms": [
+      "consistency",
+      "harmony"
+    ]
+  },
+  {
+    "date": "2025-11-10",
+    "word": "Partisan",
+    "pos": "Adj.",
+    "definition": "Strongly supporting a particular party, cause, or person; biased",
+    "example": "The report was criticized as being partisan.",
+    "synonyms": [
+      "biased",
+      "one-sided"
+    ],
+    "antonyms": [
+      "neutral",
+      "impartial"
+    ]
+  },
+  {
+    "date": "2025-11-11",
+    "word": "Paucity",
+    "pos": "N.",
+    "definition": "The presence of something only in small or insufficient quantities; scarcity",
+    "example": "There is a paucity of reliable data.",
+    "synonyms": [
+      "scarcity",
+      "shortage"
+    ],
+    "antonyms": [
+      "abundance",
+      "plenty"
+    ]
+  },
+  {
+    "date": "2025-11-12",
+    "word": "Perennial",
+    "pos": "Adj.",
+    "definition": "Lasting or existing for a long or apparently infinite time; enduring",
+    "example": "He faced the perennial problem of funding.",
+    "synonyms": [
+      "everlasting",
+      "perpetual"
+    ],
+    "antonyms": [
+      "temporary",
+      "short-lived"
+    ]
+  },
+  {
+    "date": "2025-11-13",
+    "word": "Perfunctory",
+    "pos": "Adj.",
+    "definition": "Carried out with a minimum of effort or reflection; superficial",
+    "example": "She gave a perfunctory nod and left.",
+    "synonyms": [
+      "superficial",
+      "cursory"
+    ],
+    "antonyms": [
+      "thorough",
+      "careful"
+    ]
+  },
+  {
+    "date": "2025-11-14",
+    "word": "Precarious",
+    "pos": "Adj.",
+    "definition": "Not securely held or in position; dangerously likely to fall or collapse; uncertain",
+    "example": "The hikers were in a precarious position on the cliff edge.",
+    "synonyms": [
+      "unsafe",
+      "unstable"
+    ],
+    "antonyms": [
+      "secure",
+      "safe"
+    ]
+  },
+  {
+    "date": "2025-11-15",
+    "word": "Precocious",
+    "pos": "Adj.",
+    "definition": "Having developed certain abilities or proclivities at an earlier age than usual",
+    "example": "A precocious child can astonish adults with early talents.",
+    "synonyms": [
+      "advanced",
+      "early"
+    ],
+    "antonyms": [
+      "backward",
+      "late"
+    ]
+  },
+  {
+    "date": "2025-11-16",
+    "word": "Presumptuous",
+    "pos": "Adj.",
+    "definition": "Failing to observe the limits of what is permitted or appropriate; overconfident",
+    "example": "It was presumptuous of him to assume the role.",
+    "synonyms": [
+      "overconfident",
+      "bold"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ]
+  },
+  {
+    "date": "2025-11-17",
+    "word": "Prevalent",
+    "pos": "Adj.",
+    "definition": "Widespread in a particular area or at a particular time",
+    "example": "That idea is prevalent among the youth.",
+    "synonyms": [
+      "widespread",
+      "common"
+    ],
+    "antonyms": [
+      "rare",
+      "uncommon"
+    ]
+  },
+  {
+    "date": "2025-11-18",
+    "word": "Procrastinate",
+    "pos": "V.",
+    "definition": "Delay or postpone action; put off doing something",
+    "example": "Don't procrastinate—start revising today.",
+    "synonyms": [
+      "delay",
+      "postpone"
+    ],
+    "antonyms": [
+      "act",
+      "advance"
+    ]
+  },
+  {
+    "date": "2025-11-19",
+    "word": "Prosaic",
+    "pos": "Adj.",
+    "definition": "Commonplace; unromantic; lacking poetic beauty",
+    "example": "The account was prosaic and failed to inspire.",
+    "synonyms": [
+      "dull",
+      "ordinary"
+    ],
+    "antonyms": [
+      "imaginative",
+      "extraordinary"
+    ]
+  },
+  {
+    "date": "2025-11-20",
+    "word": "Prolific",
+    "pos": "Adj.",
+    "definition": "Producing much fruit or foliage or many offspring; highly productive",
+    "example": "The author was prolific, producing many novels.",
+    "synonyms": [
+      "productive",
+      "fruitful"
+    ],
+    "antonyms": [
+      "unproductive",
+      "barren"
+    ]
+  },
+  {
+    "date": "2025-11-21",
+    "word": "Prudent",
+    "pos": "Adj.",
+    "definition": "Acting with or showing care and thought for the future; wise",
+    "example": "It is prudent to save a portion of your income.",
+    "synonyms": [
+      "wise",
+      "cautious"
+    ],
+    "antonyms": [
+      "reckless",
+      "imprudent"
+    ]
+  },
+  {
+    "date": "2025-11-22",
+    "word": "Quell",
+    "pos": "V.",
+    "definition": "Put an end to (a rebellion or other disorder), typically by the use of force; suppress",
+    "example": "Authorities moved to quell the unrest.",
+    "synonyms": [
+      "suppress",
+      "quash"
+    ],
+    "antonyms": [
+      "encourage",
+      "incite"
+    ]
+  },
+  {
+    "date": "2025-11-23",
+    "word": "Quintessential",
+    "pos": "Adj.",
+    "definition": "Representing the most perfect or typical example of a quality or class",
+    "example": "He is the quintessential professional: punctual and prepared.",
+    "synonyms": [
+      "typical",
+      "ideal"
+    ],
+    "antonyms": [
+      "atypical",
+      "unrepresentative"
+    ]
+  },
+  {
+    "date": "2025-11-24",
+    "word": "Recalcitrant",
+    "pos": "Adj.",
+    "definition": "Having an obstinately uncooperative attitude toward authority or discipline",
+    "example": "The recalcitrant student refused to follow instructions.",
+    "synonyms": [
+      "uncooperative",
+      "defiant"
+    ],
+    "antonyms": [
+      "obedient",
+      "compliant"
+    ]
+  },
+  {
+    "date": "2025-11-25",
+    "word": "Reconcile",
+    "pos": "V.",
+    "definition": "Restore friendly relations between; make (one thing) compatible with another",
+    "example": "They managed to reconcile their differences.",
+    "synonyms": [
+      "settle",
+      "harmonize"
+    ],
+    "antonyms": [
+      "alienate",
+      "estrange"
+    ]
+  }
+]

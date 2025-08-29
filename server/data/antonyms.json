@@ -1,0 +1,120 @@
+{
+  "A": [
+    {
+      "word": "Abundant",
+      "antonym1": "Scarce",
+      "antonym2": "Limited",
+      "antonym3": "Insufficient",
+      "definition": "Existing or available in large quantities; plentiful"
+    },
+    {
+      "word": "Accept",
+      "antonym1": "Reject",
+      "antonym2": "Decline",
+      "antonym3": "Refuse",
+      "definition": "Consent to receive or undertake something offered"
+    },
+    {
+      "word": "Advance",
+      "antonym1": "Retreat",
+      "antonym2": "Withdraw",
+      "antonym3": "Recede",
+      "definition": "Move forward in a purposeful way"
+    },
+    {
+      "word": "Ancient",
+      "antonym1": "Modern",
+      "antonym2": "Contemporary",
+      "antonym3": "Recent",
+      "definition": "Belonging to the very distant past"
+    },
+    {
+      "word": "Artificial",
+      "antonym1": "Natural",
+      "antonym2": "Genuine",
+      "antonym3": "Authentic",
+      "definition": "Made or produced by human beings rather than occurring naturally"
+    },
+    {
+      "word": "Ascend",
+      "antonym1": "Descend",
+      "antonym2": "Fall",
+      "antonym3": "Drop",
+      "definition": "Go up or climb"
+    },
+    {
+      "word": "Attack",
+      "antonym1": "Defend",
+      "antonym2": "Protect",
+      "antonym3": "Guard",
+      "definition": "Take aggressive action against someone or something"
+    },
+    {
+      "word": "Attract",
+      "antonym1": "Repel",
+      "antonym2": "Repulse",
+      "antonym3": "Deter",
+      "definition": "Cause someone or something to come to a place or participate in an activity"
+    },
+    {
+      "word": "Awake",
+      "antonym1": "Asleep",
+      "antonym2": "Sleeping",
+      "antonym3": "Unconscious",
+      "definition": "Stop sleeping; wake from sleep"
+    },
+    {
+      "word": "Alive",
+      "antonym1": "Dead",
+      "antonym2": "Deceased",
+      "antonym3": "Lifeless",
+      "definition": "Living, not dead"
+    }
+  ],
+  "B": [
+    {
+      "word": "Beautiful",
+      "antonym1": "Ugly",
+      "antonym2": "Hideous",
+      "antonym3": "Unattractive",
+      "definition": "Pleasing the senses or mind aesthetically"
+    },
+    {
+      "word": "Brave",
+      "antonym1": "Cowardly",
+      "antonym2": "Fearful",
+      "antonym3": "Timid",
+      "definition": "Ready to face and endure danger or pain"
+    },
+    {
+      "word": "Bright",
+      "antonym1": "Dark",
+      "antonym2": "Dim",
+      "antonym3": "Dull",
+      "definition": "Giving out or reflecting a lot of light"
+    }
+  ],
+  "C": [
+    {
+      "word": "Complex",
+      "antonym1": "Simple",
+      "antonym2": "Easy",
+      "antonym3": "Basic",
+      "definition": "Consisting of many different parts"
+    },
+    {
+      "word": "Cold",
+      "antonym1": "Hot",
+      "antonym2": "Warm",
+      "antonym3": "Heated",
+      "definition": "Of or at a low or relatively low temperature"
+    },
+    {
+      "word": "Cruel",
+      "antonym1": "Kind",
+      "antonym2": "Compassionate",
+      "antonym3": "Merciful",
+      "definition": "Willfully causing pain or suffering to others"
+    }
+  ]
+}
