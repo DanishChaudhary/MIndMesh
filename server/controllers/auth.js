@@ -47,13 +47,15 @@ exports.register = async (req, res, next) => {
         await user.save();
         
         const token = signToken(user);
-        res.cookie('token', token, { 
+        const cookieOptions = { 
             httpOnly: true, 
-            sameSite: 'lax',
+            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
             secure: process.env.NODE_ENV === 'production',
             maxAge: 7 * 24 * 60 * 60 * 1000,
             path: '/'
-        });
+        };
+        
+        res.cookie('token', token, cookieOptions);
         res.json({ 
             user: { _id: user._id, name: user.name, email: user.email },
             subscription: user.subscription || null
@@ -65,18 +67,24 @@ exports.login = async (req, res, next) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) return res.status(400).json({ error: 'email_and_password_required' });
-        const user = await User.findOne({ email });
+        
+        const user = await User.findOne({ email: email.toLowerCase().trim() });
         if (!user) return res.status(400).json({ error: 'invalid_credentials' });
+        
         const match = await bcrypt.compare(password, user.password);
         if (!match) return res.status(400).json({ error: 'invalid_credentials' });
+        
         const token = signToken(user);
-        res.cookie('token', token, { 
+        
+        const cookieOptions = { 
             httpOnly: true, 
-            sameSite: 'lax',
-            secure: false,
+            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+            secure: process.env.NODE_ENV === 'production',
             maxAge: 7 * 24 * 60 * 60 * 1000,
             path: '/'
-        });
+        };
+        
+        res.cookie('token', token, cookieOptions);
         res.json({ 
             user: { _id: user._id, name: user.name, email: user.email },
             subscription: user.subscription || null
