@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -48,14 +48,19 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/blackbook
 mongoose.set('bufferCommands', false);
 
 // Middleware
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({ 
-    origin: process.env.CLIENT_ORIGIN || 'https://www.brainmesh.in', 
+    origin: [process.env.CLIENT_ORIGIN, 'https://www.brainmesh.in'], 
     credentials: true,
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
 }));
 app.use(rateLimit({ windowMs: 60 * 1000, max: 120 }));
 
@@ -79,18 +84,27 @@ app.get('/health', (req, res) => {
 // Serve built client when available
 const distDir = path.join(__dirname, '..', 'client', 'dist');
 const distIndex = path.join(distDir, 'index.html');
+
+console.log('Checking for client build at:', distDir);
+console.log('Index file exists:', fs.existsSync(distIndex));
+
 if (fs.existsSync(distIndex)) {
-    app.use(express.static(distDir));
+    app.use(express.static(distDir, {
+        maxAge: '1d',
+        etag: false
+    }));
+    
+    // Catch all handler for React Router
     app.get('*', (req, res) => {
-        // Skip API routes
-        if (req.path.startsWith('/api/')) {
+        // Skip API routes and health check
+        if (req.path.startsWith('/api/') || req.path === '/health') {
             return res.status(404).json({ error: 'API endpoint not found' });
         }
         res.sendFile(distIndex);
     });
 } else {
     app.get('*', (req, res) => {
-        res.status(200).send('Client build not found. Run "npm run build" first, then restart the server.');
+        res.status(200).send(`Client build not found at ${distDir}. Run "npm run build" first, then restart the server.`);
     });
 }
 
