@@ -2,7 +2,7 @@
     "name": "blackbook-vocab-server",
     "version": "1.0.0",
     "private": true,
-    "main": "index.js",
+    "main": "server/index.js",
     "scripts": {
         "dev": "nodemon server/index.js",
         "build": "npm install --production=false && cd client && npm install --production=false && npm run build",

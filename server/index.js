@@ -67,6 +67,15 @@ app.use('/api/user', userRoutes);
 app.use('/api/quiz', quizRoutes);
 app.use('/api/webhook', webhookRoutes);
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.status(200).json({ 
+        status: 'OK', 
+        timestamp: new Date().toISOString(),
+        env: process.env.NODE_ENV 
+    });
+});
+
 // Serve built client when available
 const distDir = path.join(__dirname, '..', 'client', 'dist');
 const distIndex = path.join(distDir, 'index.html');
@@ -80,7 +89,7 @@ if (fs.existsSync(distIndex)) {
         res.sendFile(distIndex);
     });
 } else {
-    app.get('/', (req, res) => {
+    app.get('*', (req, res) => {
         res.status(200).send('Client build not found. Run "npm run build" first, then restart the server.');
     });
 }
@@ -91,4 +100,4 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).json({ error: err.message || 'internal_error' });
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
