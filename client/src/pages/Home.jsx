@@ -176,10 +176,18 @@ export default function Home({ user, onLogout }) {
     const isFeatureUnlocked = (feature) => {
         if (!user) return false
         
-        // If user has ANY active subscription, unlock ALL features
+        // Check if user has ANY active subscription
         if (userSubscription && userSubscription.status === 'active') {
             // Double check expiry date
             if (userSubscription.expiresAt && new Date() > new Date(userSubscription.expiresAt)) {
+                return false
+            }
+            return true
+        }
+        
+        // Also check user.subscription from App.jsx (fallback)
+        if (user.subscription && user.subscription.status === 'active') {
+            if (user.subscription.expiresAt && new Date() > new Date(user.subscription.expiresAt)) {
                 return false
             }
             return true

@@ -7,11 +7,14 @@ export default function Login({ onLogin }) {
     const [password, setPassword] = useState('')
     const [showPassword, setShowPassword] = useState(false)
     const [err, setErr] = useState(null)
+    const [loading, setLoading] = useState(false)
     const nav = useNavigate();
     const location = useLocation();
 
     async function submit(e) {
         e.preventDefault();
+        setLoading(true);
+        setErr(null);
         try {
             const r = await axios.post('/api/auth/login', { email, password }, { withCredentials: true });
             if (r.data && r.data.user) {
@@ -23,6 +26,8 @@ export default function Login({ onLogin }) {
             }
         } catch (e) { 
             setErr(e.response?.data?.error || 'login_failed'); 
+        } finally {
+            setLoading(false);
         }
     }
 
@@ -137,9 +142,17 @@ export default function Login({ onLogin }) {
                         {/* Submit Button */}
                         <button 
                             type="submit" 
-                            className="w-full py-4 bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] text-white font-semibold rounded-xl hover:from-[#4f46e5] hover:to-[#7c3aed] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] transition-all duration-200 ease-out active:scale-[0.98]"
+                            disabled={loading}
+                            className="w-full py-4 bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] text-white font-semibold rounded-xl hover:from-[#4f46e5] hover:to-[#7c3aed] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] transition-all duration-200 ease-out active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none"
                         >
-                            Login
+                            {loading ? (
+                                <div className="flex items-center justify-center">
+                                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                                    Logging in...
+                                </div>
+                            ) : (
+                                'Login'
+                            )}
                         </button>
                         
                         {/* Register Link */}

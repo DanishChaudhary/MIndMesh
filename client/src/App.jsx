@@ -68,8 +68,7 @@ export default function App() {
                 if (r.data && r.data.user) {
                     const userData = { 
                         ...r.data.user, 
-                        subscription: r.data.subscription || null,
-                        hasActiveSubscription: !!(r.data.subscription && r.data.subscription.plans && r.data.subscription.plans.length > 0)
+                        subscription: r.data.subscription || null
                     };
                     setUser(userData);
                 } else {
@@ -83,6 +82,28 @@ export default function App() {
         }
         me();
     }, [])
+
+    // Refresh user data when returning from payment
+    useEffect(() => {
+        if (location.pathname === '/' && location.search.includes('payment=success')) {
+            // Refresh user data after successful payment
+            async function refreshUser() {
+                try {
+                    const r = await axios.get('/api/auth/me', { withCredentials: true });
+                    if (r.data && r.data.user) {
+                        const userData = { 
+                            ...r.data.user, 
+                            subscription: r.data.subscription || null
+                        };
+                        setUser(userData);
+                    }
+                } catch (e) {
+                    console.error('Failed to refresh user data:', e);
+                }
+            }
+            refreshUser();
+        }
+    }, [location])
 
     // Remove automatic auth refresh on route changes to prevent logout loops
 

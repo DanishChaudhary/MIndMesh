@@ -16,7 +16,7 @@ export default function PaymentValidate() {
                     setStatus('success')
                     setMessage('Payment successful! Unlocking features...')
                     setTimeout(() => {
-                        navigate('/')
+                        navigate('/?payment=success')
                     }, 2000)
                 } else if (response.data.success && response.data.state === 'FAILED') {
                     setStatus('failed')

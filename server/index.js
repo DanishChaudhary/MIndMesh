@@ -21,16 +21,17 @@ const PORT = process.env.PORT || 5000;
 
 
 const url = 'https://www.brainmesh.in';
-const interval = 120000;
+const intervalMs = 10 * 60 * 1000; // 10 minutes
 
-function reloadWebsite(){
-    axios 
-    .get(url)
-    .then(res => { console.log('Website reloaded successfully'); })
-    .catch(err => { console.log('Website reload failed'); });
+function reloadWebsite() {
+    axios.get(url)
+        .then(res => { console.log(new Date().toISOString(), 'ping ok'); })
+        .catch(err => { console.log(new Date().toISOString(), 'ping failed'); });
 }
 
-setInterval(reloadWebsite, interval);
+// ping immediately so user doesn't wait for first interval
+reloadWebsite();
+setInterval(reloadWebsite, intervalMs);
 
 
 // Connect Mongo
@@ -52,14 +53,14 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({ 
-    origin: process.env.CLIENT_ORIGIN || 'https://www.brainmesh.in', 
+app.use(cors({
+    origin: process.env.CLIENT_ORIGIN || 'https://www.brainmesh.in',
     credentials: true,
     optionsSuccessStatus: 200
 }));
 app.set('trust proxy', 1);
-app.use(rateLimit({ 
-    windowMs: 60 * 1000, 
+app.use(rateLimit({
+    windowMs: 60 * 1000,
     max: 120,
     standardHeaders: true,
     legacyHeaders: false,
@@ -79,10 +80,10 @@ app.use('/api/webhook', webhookRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-    res.status(200).json({ 
-        status: 'OK', 
+    res.status(200).json({
+        status: 'OK',
         timestamp: new Date().toISOString(),
-        env: process.env.NODE_ENV 
+        env: process.env.NODE_ENV
     });
 });
 
