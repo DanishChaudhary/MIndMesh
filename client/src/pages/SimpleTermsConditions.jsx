@@ -40,8 +40,8 @@ export default function SimpleTermsConditions() {
             <ul className="list-disc pl-6 space-y-1">
               <li><strong>7 Days Trial:</strong> ₹19 - Perfect for testing our platform and features</li>
               <li><strong>3 Months Plan:</strong> ₹129 - Ideal for focused exam preparation</li>
-              <li><strong>6 Months Plan:</strong> ₹199 - Best value for comprehensive learning</li>
-              <li><strong>12 Months Plan:</strong> ₹329 - Complete mastery with maximum savings</li>
+              <li><strong>6 Months Plan:</strong> ₹219 - Best value for comprehensive learning</li>
+              <li><strong>12 Months Plan:</strong> ₹349 - Complete mastery with maximum savings</li>
             </ul>
           </div>
           <div className="mb-4">

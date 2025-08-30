@@ -33,7 +33,7 @@ function normalizeAuthHeader(header) {
 
 function calculateDaysFromPrice(amount) {
     const priceMap = {
-        1: 7,      // ₹1 = 7 days
+        19: 7,     // ₹19 = 7 days
         129: 90,   // ₹129 = 3 months
         219: 180,  // ₹219 = 6 months  
         349: 365   // ₹349 = 1 year

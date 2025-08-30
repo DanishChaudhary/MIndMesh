@@ -832,7 +832,7 @@ export default function Home({ user, onLogout }) {
                         <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                                    🔥 Limited Offer
+                                    🔥 Trial Plan
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">7 Days Trial</h3>
                                 <div className="mb-4">

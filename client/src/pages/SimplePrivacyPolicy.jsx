@@ -65,7 +65,7 @@ export default function SimplePrivacyPolicy() {
           <h2 className="text-xl font-semibold mb-3">How We Use Your Information</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>Personalized Learning:</strong> Track your progress through 200+ vocabulary words, customize difficulty levels, and recommend practice sessions based on your performance</li>
-            <li><strong>Subscription Management:</strong> Process payments for 7-day trial (₹19), 3-month (₹129), 6-month (₹199), and 1-year (₹329) plans</li>
+            <li><strong>Subscription Management:</strong> Process payments for 7-day trial (₹19), 3-month (₹129), 6-month (₹219), and 1-year (₹349) plans</li>
             <li><strong>Progress Tracking:</strong> Monitor completion rates across OWS, IPH, Synonyms, and Antonyms sections</li>
             <li><strong>Quiz Optimization:</strong> Generate targeted quizzes based on your weak areas and learning patterns</li>
             <li><strong>Communication:</strong> Send important updates about new vocabulary content, subscription renewals, and platform improvements</li>

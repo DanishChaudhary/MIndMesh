@@ -8,7 +8,7 @@ function generateMerchantTxId(plan) {
 function calculateDaysFromPrice(amount) {
     // Define price to days mapping
     const priceMap = {
-        1: 7,     // 1rs = 7 days (trial)
+        19: 7,    // 19rs = 7 days (trial)
         129: 90,  // 129rs = 90 days (3months)
         219: 180, // 219rs = 180 days (6months)
         349: 365  // 349rs = 1 year
@@ -30,7 +30,7 @@ function getPlanNameFromId(planId) {
 
 // Define valid plans and their exact amounts
 const VALID_PLANS = {
-    'trial': 1,
+    'trial': 19,
     '3months': 129, 
     '6months': 219,
     '1year': 349

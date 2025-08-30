@@ -13,9 +13,9 @@ export default function Payment({ user }) {
         {
             id: 'trial',
             name: '7 Days Trial',
-            price: 1,
+            price: 19,
             originalPrice: 49,
-            discount: '98% OFF',
+            discount: '61% OFF',
             duration: '7 Days Access',
             badge: '🔥 Limited Offer',
             badgeColor: 'from-blue-500 to-blue-600',
