@@ -729,20 +729,20 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
         // For letter quizzes, get ALL words for that letter (no pagination)
         let paginatedData = filteredData;
         if (type !== 'wotd' && type !== 'practice') {
-            // Random selection for Quick 20 when random=1 OR Top200 quizzes OR freequiz
-            if (random || type.startsWith('top200') || type === 'freequiz') {
+            // ALWAYS shuffle for OWS and IPH quizzes to randomize questions
+            if (type === 'ows' || type === 'iph' || type === 'top200ows' || type === 'top200iph' || random || type.startsWith('top200') || type === 'freequiz') {
                 const size = type.startsWith('top200') ? Math.min(filteredData.length, 200) : 
                            type === 'freequiz' ? (parseInt(pageSize) || 150) : 
                            (parseInt(pageSize) || 20);
-                // Shuffle the data randomly
+                // Shuffle the data randomly using Fisher-Yates algorithm
                 const arr = filteredData.slice();
                 for (let i = arr.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [arr[i], arr[j]] = [arr[j], arr[i]];
                 }
                 paginatedData = arr.slice(0, size);
-                // Randomized and sliced data
             } else {
+                // For synonyms and antonyms, keep existing behavior
                 paginatedData = filteredData;
             }
         } else if (type === 'wotd') {

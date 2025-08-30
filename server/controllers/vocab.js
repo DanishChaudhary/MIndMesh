@@ -35,6 +35,8 @@ exports.wotd = async (req, res, next) => {
                 pos: item.pos || null,
                 definition: item.definition || item.meaning,
                 example: item.example || null,
+                synonyms: item.synonyms || [],
+                antonyms: item.antonyms || [],
                 type: item.source
             };
             return res.json(w);
@@ -42,14 +44,20 @@ exports.wotd = async (req, res, next) => {
 
         const wotdData = JSON.parse(fs.readFileSync(wotdPath, 'utf8'));
         
-        // Calculate days since epoch to get sequential word index
+        // Get today's date in YYYY-MM-DD format
         const today = new Date();
-        const epoch = new Date('2024-01-01'); // Starting date
-        const daysSinceEpoch = Math.floor((today - epoch) / (1000 * 60 * 60 * 24));
+        const todayString = today.toISOString().split('T')[0];
         
-        // Get word sequentially, cycling through the array
-        const wordIndex = daysSinceEpoch % wotdData.length;
-        let todayWord = wotdData[wordIndex];
+        // Find word for today's date
+        let todayWord = wotdData.find(item => item.date === todayString);
+        
+        if (!todayWord) {
+            // If no word for today, use day-based cycling as fallback
+            const epoch = new Date('2024-01-01');
+            const daysSinceEpoch = Math.floor((today - epoch) / (1000 * 60 * 60 * 24));
+            const wordIndex = daysSinceEpoch % wotdData.length;
+            todayWord = wotdData[wordIndex];
+        }
         
         if (!todayWord) {
             // Final fallback to database
@@ -63,11 +71,21 @@ exports.wotd = async (req, res, next) => {
                 pos: item.pos || null,
                 definition: item.definition || item.meaning,
                 example: item.example || null,
+                synonyms: item.synonyms || [],
+                antonyms: item.antonyms || [],
                 type: item.source
             };
         }
         
-        res.json(todayWord);
+        // Ensure synonyms and antonyms are included
+        const responseWord = {
+            ...todayWord,
+            synonyms: todayWord.synonyms || [],
+            antonyms: todayWord.antonyms || [],
+            example: todayWord.example || null
+        };
+        
+        res.json(responseWord);
     } catch (err) { 
         console.error('WOTD Error:', err);
         next(err); 

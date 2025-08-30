@@ -88,7 +88,7 @@ export default function SimpleRefundPolicy() {
             </ul>
           </div>
           <div className="mb-4">
-            <h3 className="font-semibold mb-2">1 Year Plan (₹329):</h3>
+            <h3 className="font-semibold mb-2">12 Months Plan (₹329):</h3>
             <ul className="list-disc pl-6 space-y-1">
               <li>Full refund available within first 7 days for technical issues only</li>
               <li>After 7 days: Refunds considered only for severe technical problems or billing errors</li>

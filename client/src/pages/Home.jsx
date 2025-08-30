@@ -200,7 +200,7 @@ export default function Home({ user, onLogout }) {
         const userPlans = user.subscription?.plans || []
         
         // Priority order: 1year > 6months > 3months > trial
-        if (userPlans.includes('1year')) return { name: '1 Year Plan', id: '1year' }
+        if (userPlans.includes('1year')) return { name: '12 Months Plan', id: '1year' }
         if (userPlans.includes('6months')) return { name: '6 Months Plan', id: '6months' }
         if (userPlans.includes('3months')) return { name: '3 Months Plan', id: '3months' }
         if (userPlans.includes('trial')) return { name: '7 Days Trial', id: 'trial' }
@@ -379,7 +379,44 @@ export default function Home({ user, onLogout }) {
                                     <div id="wotd-word" className="mt-2 font-semibold text-lg truncate">{wotd.word}</div>
                                     {wotd.pos && <div id="wotd-pos" className="mt-1 text-sm text-gray-600 italic">{wotd.pos}</div>}
                                     <div id="wotd-meaning" className="mt-1 text-sm text-gray-600">{wotd.definition}</div>
-                                    {wotd.example && <div id="wotd-example" className="mt-2 text-sm text-gray-500 italic">{wotd.example}</div>}
+                                    
+                                    {/* Example */}
+                                    {wotd.example && (
+                                        <div id="wotd-example" className="mt-2 p-2 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                                            <div className="text-xs text-blue-600 font-medium mb-1">Example:</div>
+                                            <div className="text-sm text-blue-700 italic">"{wotd.example}"</div>
+                                        </div>
+                                    )}
+                                    
+                                    {/* Synonyms and Antonyms */}
+                                    {(wotd.synonyms?.length > 0 || wotd.antonyms?.length > 0) && (
+                                        <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            {wotd.synonyms?.length > 0 && (
+                                                <div className="p-2 bg-green-50 rounded-lg">
+                                                    <div className="text-xs text-green-600 font-medium mb-1">Synonyms:</div>
+                                                    <div className="flex flex-wrap gap-1">
+                                                        {wotd.synonyms.map((syn, idx) => (
+                                                            <span key={idx} className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">
+                                                                {syn}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                            {wotd.antonyms?.length > 0 && (
+                                                <div className="p-2 bg-red-50 rounded-lg">
+                                                    <div className="text-xs text-red-600 font-medium mb-1">Antonyms:</div>
+                                                    <div className="flex flex-wrap gap-1">
+                                                        {wotd.antonyms.map((ant, idx) => (
+                                                            <span key={idx} className="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full">
+                                                                {ant}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
 
                                     <div className="mt-4 flex flex-col sm:flex-row gap-2">
                                         <button
@@ -934,13 +971,13 @@ export default function Home({ user, onLogout }) {
                             </div>
                         </div>
 
-                        {/* 1 Year Plan */}
+                        {/* 12 Months Plan */}
                         <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
                                     Best Value
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">1 Year Plan</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">12 Months Plan</h3>
                                 <div className="mb-4">
                                     <span className="text-3xl font-bold text-gray-900">₹329</span>
                                     <span className="text-lg text-gray-500 line-through ml-2">₹529</span>

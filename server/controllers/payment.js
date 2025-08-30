@@ -23,7 +23,7 @@ function getPlanNameFromId(planId) {
         'trial': '7 Days Trial',
         '3months': '3 Months Plan',
         '6months': '6 Months Plan', 
-        '1year': '1 Year Plan'
+        '1year': '12 Months Plan'
     };
     return planNames[planId] || planId;
 }

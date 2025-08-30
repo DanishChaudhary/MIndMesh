@@ -64,7 +64,7 @@ export default function Payment({ user }) {
         },
         {
             id: '1year',
-            name: '1 Year Plan',
+            name: '12 Months Plan',
             price: 329,
             originalPrice: 529,
             discount: '37% OFF',
