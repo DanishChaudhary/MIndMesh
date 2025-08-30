@@ -119,11 +119,11 @@ exports.initiate = async (req, res, next) => {
 
 exports.status = async (req, res, next) => {
     try {
-        const { orderId } = req.params;
-        if (!orderId) return res.status(400).json({ success: false, error: 'orderId required' });
-        const ord = await Order.findOne({ merchantTransactionId: orderId });
+        const { merchantTransactionId } = req.params;
+        if (!merchantTransactionId) return res.status(400).json({ success: false, error: 'merchantTransactionId required' });
+        const ord = await Order.findOne({ merchantTransactionId });
         if (ord && ord.status === 'SUCCESS') return res.json({ success: true, state: 'SUCCESS', order: ord });
-        const status = await phonepe.checkStatus(orderId);
+        const status = await phonepe.checkStatus(merchantTransactionId);
         if (!status.success) return res.json({ success: false, error: 'phonepe_check_failed' });
         const raw = status.raw || {};
         const code = (raw.code || raw.data?.code || '').toString().toUpperCase();
