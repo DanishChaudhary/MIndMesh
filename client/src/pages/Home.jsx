@@ -314,15 +314,21 @@ export default function Home({ user, onLogout }) {
                                 <div className="hidden sm:flex items-center gap-3">
                                     <button
                                         onClick={handleStartQuickQuiz}
-                                        className="inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                                     >
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
                                         Start Free Quiz
                                     </button>
                                 </div>
                                 <button
                                     onClick={handleStartQuickQuiz}
-                                    className="sm:hidden inline-flex items-center justify-center whitespace-nowrap w-full px-3 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm text-sm font-medium"
+                                    className="sm:hidden inline-flex items-center justify-center gap-1 w-full px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 shadow-md text-sm"
                                 >
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
                                     Free Quiz
                                 </button>
                             </>
@@ -330,7 +336,10 @@ export default function Home({ user, onLogout }) {
 
                         <div id="auth-area">
                             {user ? (
-                                <button onClick={onLogout} className="inline-flex items-center px-4 py-2 rounded-lg bg-gray-200 text-gray-800 hover:bg-gray-300 shadow-sm">
+                                <button onClick={onLogout} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-700 text-white font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-300 shadow-md hover:shadow-lg">
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                    </svg>
                                     Logout
                                 </button>
                             ) : (
@@ -364,10 +373,10 @@ export default function Home({ user, onLogout }) {
                                     </>
                                 ) : (
                                     <>
-                                        <Link to="/payment?plan=basic" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white shadow text-sm hover:bg-gray-50">One Word Substitution 🔒</Link>
-                                        <Link to="/payment?plan=basic" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/60 shadow text-sm hover:bg-gray-50">Idioms & Phrases 🔒</Link>
-                                        <Link to="/payment?plan=premium" className="inline-flex items-center gap-2 px-3 py-2 rounded-full border text-sm hover:bg-gray-50">Synonyms 🔒</Link>
-                                        <Link to="/payment?plan=premium" className="inline-flex items-center gap-2 px-3 py-2 rounded-full border text-sm hover:bg-gray-50">Antonyms 🔒</Link>
+                                        <Link to="/payment?plan=6months#subscription-plans" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white shadow text-sm hover:bg-gray-50">One Word Substitution 🔒</Link>
+                                        <Link to="/payment?plan=6months#subscription-plans" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/60 shadow text-sm hover:bg-gray-50">Idioms & Phrases 🔒</Link>
+                                        <Link to="/payment?plan=6months#subscription-plans" className="inline-flex items-center gap-2 px-3 py-2 rounded-full border text-sm hover:bg-gray-50">Synonyms 🔒</Link>
+                                        <Link to="/payment?plan=6months#subscription-plans" className="inline-flex items-center gap-2 px-3 py-2 rounded-full border text-sm hover:bg-gray-50">Antonyms 🔒</Link>
                                     </>
                                 )}
                             </div>
@@ -811,6 +820,11 @@ export default function Home({ user, onLogout }) {
                             Unlock unlimited vocabulary learning with premium features and advanced quizzes
                             {!user && <span className="block mt-2 text-sm">Sign up to access all features!</span>}
                         </p>
+                        <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                            <p className="text-sm text-blue-800 font-medium text-center">
+                                💡 <strong>Smart Plan Stacking:</strong> Purchase multiple plans to extend your subscription! New plans add days to your existing subscription period.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
@@ -818,7 +832,7 @@ export default function Home({ user, onLogout }) {
                         <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                                    Trial
+                                    🔥 Limited Offer
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">7 Days Trial</h3>
                                 <div className="mb-4">
@@ -866,7 +880,7 @@ export default function Home({ user, onLogout }) {
                         <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                                    Popular
+                                    🎯 Popular Choice
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">3 Months Plan</h3>
                                 <div className="mb-4">
@@ -881,25 +895,25 @@ export default function Home({ user, onLogout }) {
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Everything in Trial
+                                        All Premium Features
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Extended Access (3 Months)
+                                        3 Months Full Access
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Basic Quiz Features
+                                        Advanced Quiz System
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Email Support
+                                        Priority Email Support
                                     </li>
                                 </ul>
                                 <Link to="/payment?plan=3months">
@@ -927,7 +941,7 @@ export default function Home({ user, onLogout }) {
                             </div>
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block mt-2">
-                                    Premium
+                                    ⭐ Best Value
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">6 Months Plan</h3>
                                 <div className="mb-4">
@@ -942,7 +956,7 @@ export default function Home({ user, onLogout }) {
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Everything in Trial
+                                        All Premium Features
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -954,7 +968,7 @@ export default function Home({ user, onLogout }) {
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Advanced Quiz Features
+                                        Advanced Quiz System
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -975,7 +989,7 @@ export default function Home({ user, onLogout }) {
                         <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                             <div className="text-center">
                                 <div className="bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                                    Best Value
+                                    💎 Best Value
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">12 Months Plan</h3>
                                 <div className="mb-4">
@@ -990,25 +1004,25 @@ export default function Home({ user, onLogout }) {
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Everything in Premium
+                                        All Premium Features
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Extended Access (1 Year)
+                                        12 Months Full Access
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Bonus Study Materials
+                                        Exclusive Study Materials
                                     </li>
                                     <li className="flex items-center">
                                         <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
-                                        Money-back guarantee
+                                        30-Day Money Back Guarantee
                                     </li>
                                 </ul>
                                 <Link to="/payment?plan=1year">

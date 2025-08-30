@@ -17,13 +17,13 @@ export default function Payment({ user }) {
             originalPrice: 49,
             discount: '98% OFF',
             duration: '7 Days Access',
-            badge: 'Trial',
+            badge: '🔥 Limited Offer',
             badgeColor: 'from-blue-500 to-blue-600',
             buttonColor: 'from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800',
             features: [
-                'Access to all basic features',
-                'One-Word Substitutions',
-                'Idioms & Phrases',
+                'All Basic Features',
+                'One-Word Substitutions (A-Z)',
+                'Idioms & Phrases (A-Z)',
                 'Daily Word of the Day'
             ]
         },
@@ -34,14 +34,14 @@ export default function Payment({ user }) {
             originalPrice: 299,
             discount: '57% OFF',
             duration: '3 Months Access',
-            badge: 'Popular',
+            badge: '🎯 Popular Choice',
             badgeColor: 'from-green-500 to-green-600',
             buttonColor: 'from-green-600 to-green-700 hover:from-green-700 hover:to-green-800',
             features: [
-                'Everything in Trial',
-                'Extended Access (3 Months)',
-                'Basic Quiz Features',
-                'Email Support'
+                'All Premium Features',
+                '3 Months Full Access',
+                'Advanced Quiz System',
+                'Priority Email Support'
             ]
         },
         {
@@ -51,14 +51,14 @@ export default function Payment({ user }) {
             originalPrice: 499,
             discount: '56% OFF',
             duration: '6 Months Access',
-            badge: 'Premium',
+            badge: '⭐ Best Value',
             badgeColor: 'from-purple-500 to-purple-600',
             buttonColor: 'from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700',
             popular: true,
             features: [
-                'Everything in Trial',
-                'Synonyms & Antonyms',
-                'Advanced Quiz Features',
+                'All Premium Features',
+                'Synonyms & Antonyms (A-Z)',
+                'Advanced Quiz System',
                 'Priority Support'
             ]
         },
@@ -69,14 +69,14 @@ export default function Payment({ user }) {
             originalPrice: 699,
             discount: '50% OFF',
             duration: '12 Months Access',
-            badge: 'Best Value',
+            badge: '💎 Ultimate Plan',
             badgeColor: 'from-yellow-600 to-orange-600',
             buttonColor: 'from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700',
             features: [
-                'Everything in Premium',
-                'Extended Access (1 Year)',
-                'Bonus Study Materials',
-                'Money-back guarantee'
+                'All Premium Features',
+                '12 Months Full Access',
+                'Exclusive Study Materials',
+                '30-Day Money Back Guarantee'
             ]
         }
     ];
@@ -86,6 +86,16 @@ export default function Payment({ user }) {
         const validPlan = plans.find(p => p.id === qp);
         if (validPlan) {
             setSelectedPlan(qp);
+        }
+        
+        // Scroll to payment section (bottom) if hash is present
+        if (window.location.hash === '#subscription-plans') {
+            setTimeout(() => {
+                const element = document.querySelector('.max-w-md.mx-auto.bg-white.rounded-2xl.shadow-lg.p-6');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }
+            }, 100);
         }
     }, [searchParams]);
 
@@ -142,7 +152,7 @@ export default function Payment({ user }) {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+                    <div id="subscription-plans" className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
                         {plans.map((plan) => (
                             <div
                                 key={plan.id}
