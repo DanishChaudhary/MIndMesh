@@ -324,7 +324,7 @@ export default function Home({ user, onLogout }) {
                                 </div>
                                 <button
                                     onClick={handleStartQuickQuiz}
-                                    className="sm:hidden inline-flex items-center justify-center gap-1 w-full px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 shadow-md text-sm"
+                                    className="sm:hidden inline-flex items-center justify-center gap-1 w-full px-4 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md text-sm whitespace-nowrap"
                                 >
                                     Free Quiz
                                 </button>
