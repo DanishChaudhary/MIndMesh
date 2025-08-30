@@ -124,10 +124,16 @@ exports.status = async (req, res, next) => {
         const ord = await Order.findOne({ merchantTransactionId });
         if (ord && ord.status === 'SUCCESS') return res.json({ success: true, state: 'SUCCESS', order: ord });
         const status = await phonepe.checkStatus(merchantTransactionId);
-        if (!status.success) return res.json({ success: false, error: 'phonepe_check_failed' });
+        if (!status.success) {
+            if (ord) {
+                return res.json({ success: true, state: ord.status === 'SUCCESS' ? 'SUCCESS' : 'FAILED', order: ord });
+            }
+            return res.json({ success: false, error: 'phonepe_check_failed' });
+        }
         const raw = status.raw || {};
+        const state = (raw.state || '').toUpperCase();
         const code = (raw.code || raw.data?.code || '').toString().toUpperCase();
-        const isSuccess = code.includes('PAYMENT_SUCCESS') || code.includes('SUCCESS');
+        const isSuccess = state === 'COMPLETED' || state === 'SUCCESS' || code.includes('PAYMENT_SUCCESS') || code.includes('SUCCESS');
         if (ord) {
             ord.phonepeRaw = raw;
             ord.status = isSuccess ? 'SUCCESS' : 'FAILED';
@@ -176,7 +182,7 @@ exports.status = async (req, res, next) => {
                 }
             }
         }
-        return res.json({ success: true, state: isSuccess ? 'SUCCESS' : 'FAILED', raw });
+        return res.json({ success: true, state: isSuccess ? 'SUCCESS' : 'FAILED', order: ord });
     } catch (err) { next(err); }
 };
 

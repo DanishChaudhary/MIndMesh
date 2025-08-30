@@ -96,9 +96,12 @@ router.post('/phonepe', async (req, res) => {
         }
 
         // Idempotency check
-        if (await isEventProcessed(transactionId, eventType)) {
-            return res.status(200).json({ received: true, message: 'Already processed' });
-        }
+        const status = await phonepe.checkStatus(transactionId);
+        if (!status.success) return res.status(200).send({ success: true });
+        const raw = status.raw || {};
+        const state = (raw.state || '').toUpperCase();
+        const code = (raw.code || raw.data?.code || '').toString().toUpperCase();
+        const isSuccess = state === 'COMPLETED' || state === 'SUCCESS' || code.includes('PAYMENT_SUCCESS') || code.includes('SUCCESS');
 
         // Find the order
         const order = await Order.findOne({ merchantTransactionId: transactionId });

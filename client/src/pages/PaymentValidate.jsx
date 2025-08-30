@@ -18,9 +18,12 @@ export default function PaymentValidate() {
                     setTimeout(() => {
                         navigate('/')
                     }, 2000)
+                } else if (response.data.success && response.data.state === 'FAILED') {
+                    setStatus('failed')
+                    setMessage('Payment failed. Please try again.')
                 } else {
                     setStatus('failed')
-                    setMessage('Payment failed or pending. Please try again.')
+                    setMessage('Payment is being processed. Please wait a moment and refresh.')
                 }
             } catch (error) {
                 setStatus('error')
