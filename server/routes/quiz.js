@@ -731,18 +731,30 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
         if (type !== 'wotd' && type !== 'practice') {
             // ALWAYS shuffle for OWS and IPH quizzes to randomize questions
             if (type === 'ows' || type === 'iph' || type === 'top200ows' || type === 'top200iph' || random || type.startsWith('top200') || type === 'freequiz') {
-                const size = type.startsWith('top200') ? Math.min(filteredData.length, 200) : 
-                           type === 'freequiz' ? (parseInt(pageSize) || 150) : 
-                           (parseInt(pageSize) || 20);
-                // Shuffle the data randomly using Fisher-Yates algorithm
-                const arr = filteredData.slice();
-                for (let i = arr.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                // For letter-based quizzes (ows, iph), show ALL questions for that letter like synonyms/antonyms
+                if (type === 'ows' || type === 'iph') {
+                    // Use ALL filtered data for the letter (no size limit)
+                    const arr = filteredData.slice();
+                    for (let i = arr.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [arr[i], arr[j]] = [arr[j], arr[i]];
+                    }
+                    paginatedData = arr; // Use all questions for the letter
+                } else {
+                    // For top200 and freequiz, keep existing size limits
+                    const size = type.startsWith('top200') ? Math.min(filteredData.length, 200) : 
+                               type === 'freequiz' ? (parseInt(pageSize) || 150) : 
+                               (parseInt(pageSize) || 20);
+                    // Shuffle the data randomly using Fisher-Yates algorithm
+                    const arr = filteredData.slice();
+                    for (let i = arr.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [arr[i], arr[j]] = [arr[j], arr[i]];
+                    }
+                    paginatedData = arr.slice(0, size);
                 }
-                paginatedData = arr.slice(0, size);
             } else {
-                // For synonyms and antonyms, keep existing behavior
+                // For synonyms and antonyms, keep existing behavior (show all)
                 paginatedData = filteredData;
             }
         } else if (type === 'wotd') {
