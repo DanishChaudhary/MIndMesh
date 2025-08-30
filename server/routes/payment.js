@@ -14,6 +14,6 @@ const paymentRateLimit = rateLimit({
 });
 
 router.post('/initiate', paymentRateLimit, checkSubscriptionStatus, initiate);
-router.get('/validate/:merchantTransactionId', checkSubscriptionStatus, status);
+router.get('/status/:merchantTransactionId', checkSubscriptionStatus, status);
 
 module.exports = router;
