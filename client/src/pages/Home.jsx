@@ -372,23 +372,31 @@ export default function Home({ user, onLogout }) {
                         </div>
 
                         {/* WOTD card - full width, truncation for long text on small screens */}
-                        <aside id="wotd-card" className="w-full p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 shadow-lg border border-indigo-100">
+                        <aside id="wotd-card" className="w-full p-4 rounded-xl bg-white shadow-sm">
                             {wotd ? (
                                 <div id="wotd-content" aria-live="polite">
-                                    <div className="text-sm font-semibold text-indigo-600 uppercase tracking-wide mb-3">Word of the Day</div>
-                                    <div id="wotd-word" className="text-2xl font-bold text-gray-900 mb-2">{wotd.word}</div>
-                                    {wotd.pos && <div id="wotd-pos" className="text-sm font-medium text-indigo-600 italic mb-3">{wotd.pos}</div>}
-                                    <div id="wotd-meaning" className="text-base text-gray-700 font-medium leading-relaxed mb-4">{wotd.definition}</div>
+                                    <div className="text-sm text-gray-600">Word of the Day</div>
+                                    <div id="wotd-word" className="mt-2 font-semibold text-lg truncate">{wotd.word}</div>
+                                    {wotd.pos && <div id="wotd-pos" className="mt-1 text-sm text-gray-600 italic">{wotd.pos}</div>}
+                                    <div id="wotd-meaning" className="mt-1 text-sm text-gray-600">{wotd.definition}</div>
+                                    
+                                    {/* Example */}
+                                    {wotd.example && (
+                                        <div id="wotd-example" className="mt-2 p-2 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                                            <div className="text-xs text-blue-600 font-medium mb-1">Example:</div>
+                                            <div className="text-sm text-blue-700 italic">"{wotd.example}"</div>
+                                        </div>
+                                    )}
                                     
                                     {/* Synonyms and Antonyms */}
                                     {(wotd.synonyms?.length > 0 || wotd.antonyms?.length > 0) && (
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
                                             {wotd.synonyms?.length > 0 && (
-                                                <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                                                    <div className="text-sm font-bold text-green-700 mb-2">Synonyms:</div>
-                                                    <div className="flex flex-wrap gap-2">
+                                                <div className="p-2 bg-green-50 rounded-lg">
+                                                    <div className="text-xs text-green-600 font-medium mb-1">Synonyms:</div>
+                                                    <div className="flex flex-wrap gap-1">
                                                         {wotd.synonyms.map((syn, idx) => (
-                                                            <span key={idx} className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full border border-green-200">
+                                                            <span key={idx} className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">
                                                                 {syn}
                                                             </span>
                                                         ))}
@@ -396,11 +404,11 @@ export default function Home({ user, onLogout }) {
                                                 </div>
                                             )}
                                             {wotd.antonyms?.length > 0 && (
-                                                <div className="p-3 bg-red-50 rounded-lg border border-red-200">
-                                                    <div className="text-sm font-bold text-red-700 mb-2">Antonyms:</div>
-                                                    <div className="flex flex-wrap gap-2">
+                                                <div className="p-2 bg-red-50 rounded-lg">
+                                                    <div className="text-xs text-red-600 font-medium mb-1">Antonyms:</div>
+                                                    <div className="flex flex-wrap gap-1">
                                                         {wotd.antonyms.map((ant, idx) => (
-                                                            <span key={idx} className="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full border border-red-200">
+                                                            <span key={idx} className="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full">
                                                                 {ant}
                                                             </span>
                                                         ))}
