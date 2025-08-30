@@ -176,19 +176,17 @@ export default function Home({ user, onLogout }) {
     const isFeatureUnlocked = (feature) => {
         if (!user) return false
         
-        // Check if user has active subscription
-        if (!userSubscription || userSubscription.status !== 'active') {
-            return false
+        // If user has ANY active subscription, unlock ALL features
+        if (userSubscription && userSubscription.status === 'active') {
+            // Double check expiry date
+            if (userSubscription.expiresAt && new Date() > new Date(userSubscription.expiresAt)) {
+                return false
+            }
+            return true
         }
         
-        // Check if subscription has expired
-        if (userSubscription.expiresAt && new Date() > new Date(userSubscription.expiresAt)) {
-            return false
-        }
-        
-        // ANY active subscription unlocks ALL features
-        // Only check if user has active subscription, not specific plan type
-        return true
+        // No subscription or inactive subscription = lock all features
+        return false
     }
 
     const isPlanPurchased = (planName) => {
@@ -351,7 +349,7 @@ export default function Home({ user, onLogout }) {
                             <p className="mt-2 text-gray-600">Short, focused quizzes with smart distractors and clear study paths. Track what you learn and revisit weak items.</p>
 
                             <div className="mt-4 flex gap-2 flex-wrap">
-                                {user && user.subscription && user.subscription.plans && user.subscription.plans.length > 0 ? (
+                                {isFeatureUnlocked() ? (
                                     <>
                                         <Link to="/ows" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white shadow text-sm">One Word Substitution</Link>
                                         <Link to="/iph" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/60 shadow text-sm">Idioms & Phrases</Link>

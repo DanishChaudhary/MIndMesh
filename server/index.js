@@ -26,7 +26,7 @@ const interval = 120000;
 function reloadWebsite(){
     axios 
     .get(url)
-    .then(res => {})
+    .then(res => {  })
     .catch(err => {});
 }
 
@@ -100,4 +100,4 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).json({ error: err.message || 'internal_error' });
 });
 
-app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

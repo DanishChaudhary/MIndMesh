@@ -68,7 +68,7 @@ router.get('/synonyms', requireActiveSubscription, async (req, res) => {
             try {
                 clientWordAttempts = JSON.parse(wordAttempts);
             } catch (e) {
-                console.log('Failed to parse wordAttempts:', e);
+                // Failed to parse wordAttempts
             }
         }
         
@@ -215,7 +215,7 @@ router.get('/200synonyms', requireActiveSubscription, async (req, res) => {
             try {
                 clientWordAttempts = JSON.parse(wordAttempts);
             } catch (e) {
-                console.log('Failed to parse wordAttempts:', e);
+                // Failed to parse wordAttempts
             }
         }
         
@@ -349,7 +349,7 @@ router.get('/200antonyms', requireActiveSubscription, async (req, res) => {
             try {
                 clientWordAttempts = JSON.parse(wordAttempts);
             } catch (e) {
-                console.log('Failed to parse wordAttempts:', e);
+                // Failed to parse wordAttempts
             }
         }
         
@@ -489,7 +489,7 @@ router.get('/antonyms', requireActiveSubscription, async (req, res) => {
             try {
                 clientWordAttempts = JSON.parse(wordAttempts);
             } catch (e) {
-                console.log('Failed to parse wordAttempts:', e);
+                // Failed to parse wordAttempts
             }
         }
         
@@ -628,7 +628,7 @@ router.get('/antonyms', requireActiveSubscription, async (req, res) => {
 router.get('/generate', checkSubscriptionStatus, async (req, res) => {
     try {
         const { letter = 'A', type = 'ows', page = 1, pageSize = 100, random } = req.query;
-        console.log('Quiz generate request:', { letter, type, page, pageSize, random });
+        // Quiz generate request
         
         // Check if this is a premium quiz type that requires subscription
         const premiumTypes = ['synonyms', 'antonyms', 'top200synonyms', 'top200antonyms', 'top200ows', 'top200iph'];
@@ -686,7 +686,7 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
         
         if (fs.existsSync(filePath) && type !== 'wotd') {
             const rawData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            console.log('File loaded successfully:', filePath, 'Data length:', Array.isArray(rawData) ? rawData.length : 'Not array');
+            // File loaded successfully
             // Handle both array format and object with letter keys
             if (Array.isArray(rawData)) {
                 data = rawData;
@@ -723,7 +723,7 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
         } else if (type === 'freequiz') {
             // For free quiz, data is already loaded from 200ows.json above
             filteredData = data;
-            console.log('Freequiz filtered data length:', filteredData.length);
+            // Freequiz filtered data
         }
         
         // For letter quizzes, get ALL words for that letter (no pagination)
@@ -741,7 +741,7 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
                     [arr[i], arr[j]] = [arr[j], arr[i]];
                 }
                 paginatedData = arr.slice(0, size);
-                console.log('Randomized and sliced data length:', paginatedData.length);
+                // Randomized and sliced data
             } else {
                 paginatedData = filteredData;
             }
@@ -750,7 +750,7 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
             paginatedData = filteredData;
         }
         
-        console.log('Final paginated data length:', paginatedData.length);
+        // Final paginated data
         
         // Generate quiz questions
         const questions = paginatedData.map(item => {
@@ -824,7 +824,7 @@ router.get('/generate', checkSubscriptionStatus, async (req, res) => {
             };
         });
         
-        console.log('Returning questions count:', questions.length);
+        // Returning questions
         res.json({
             questions,
             total: filteredData.length,
@@ -844,7 +844,7 @@ router.post('/submit', async (req, res) => {
         const { letter, type, score, total, answers } = req.body;
         
         // Here you could save quiz results to database if needed
-        console.log('Quiz submitted:', { letter, type, score, total });
+        // Quiz submitted
         
         res.json({ success: true, message: 'Quiz results saved' });
         
