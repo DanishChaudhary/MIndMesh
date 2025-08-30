@@ -8,14 +8,26 @@ function generateMerchantTxId(plan) {
 function calculateDaysFromPrice(amount) {
     // Define price to days mapping
     const priceMap = {
-        19: 7,    // 19rs = 7 days
-        49: 30,   // 49rs = 30 days
-        99: 90,   // 99rs = 90 days
-        199: 365  // 199rs = 365 days
+        19: 7,    // 19rs = 7 days (trial)
+        129: 90,  // 129rs = 90 days (3months)
+        199: 180, // 199rs = 180 days (6months)
+        329: 365  // 329rs = 365 days (1year)
     };
     
     // Return days based on amount, default to 7 days for any unrecognized amount
     return priceMap[amount] || 7;
+}
+
+function getPlanNameFromId(planId) {
+    const planNames = {
+        'trial': '7 Days Trial',
+        '3months': '3 Months Plan',
+        '6months': '6 Months Plan', 
+        '1year': '1 Year Plan',
+        'basic': 'Basic Plan',
+        'premium': 'Premium Plan'
+    };
+    return planNames[planId] || planId;
 }
 
 // Define valid plans and their exact amounts
@@ -33,6 +45,11 @@ exports.initiate = async (req, res, next) => {
         // Validate required fields
         if (!plan || !amount) {
             return res.status(400).json({ success: false, error: 'plan_amount_required' });
+        }
+        
+        // Check if user is authenticated
+        if (!req.user || !req.user.id) {
+            return res.status(401).json({ success: false, error: 'authentication_required' });
         }
         
         // Security: Validate plan exists and amount matches exactly
@@ -140,7 +157,8 @@ exports.status = async (req, res, next) => {
                     // Update subscription
                     user.subscription = {
                         ...user.subscription,
-                        currentPlan: ord.plan || 'basic',
+                        currentPlan: ord.plan || 'trial',
+                        planName: getPlanNameFromId(ord.plan || 'trial'),
                         planPrice: ord.amount,
                         status: 'active',
                         expiresAt: expiryDate,
@@ -148,7 +166,8 @@ exports.status = async (req, res, next) => {
                         purchaseHistory: [
                             ...(user.subscription?.purchaseHistory || []),
                             {
-                                plan: ord.plan || 'basic',
+                                plan: ord.plan || 'trial',
+                                planName: getPlanNameFromId(ord.plan || 'trial'),
                                 price: ord.amount,
                                 purchaseDate: new Date(),
                                 daysAdded: daysToAdd
@@ -200,7 +219,8 @@ exports.webhook = async (req, res, next) => {
                     // Update subscription
                     user.subscription = {
                         ...user.subscription,
-                        currentPlan: ord.plan || 'basic',
+                        currentPlan: ord.plan || 'trial',
+                        planName: getPlanNameFromId(ord.plan || 'trial'),
                         planPrice: ord.amount,
                         status: 'active',
                         expiresAt: expiryDate,
@@ -208,7 +228,8 @@ exports.webhook = async (req, res, next) => {
                         purchaseHistory: [
                             ...(user.subscription?.purchaseHistory || []),
                             {
-                                plan: ord.plan || 'basic',
+                                plan: ord.plan || 'trial',
+                                planName: getPlanNameFromId(ord.plan || 'trial'),
                                 price: ord.amount,
                                 purchaseDate: new Date(),
                                 daysAdded: daysToAdd

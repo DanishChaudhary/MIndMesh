@@ -2,7 +2,7 @@ const express = require('express');
 const rateLimit = require('express-rate-limit');
 const router = express.Router();
 const { initiate, status } = require('../controllers/payment');
-const { requireActiveSubscription } = require('../middleware/subscriptionAuth');
+const { checkSubscriptionStatus } = require('../middleware/subscriptionAuth');
 
 // Strict rate limiting for payment endpoints
 const paymentRateLimit = rateLimit({
@@ -13,7 +13,7 @@ const paymentRateLimit = rateLimit({
     legacyHeaders: false,
 });
 
-router.post('/initiate', paymentRateLimit, requireActiveSubscription, initiate);
-router.get('/validate/:merchantTransactionId', requireActiveSubscription, status);
+router.post('/initiate', paymentRateLimit, checkSubscriptionStatus, initiate);
+router.get('/validate/:merchantTransactionId', checkSubscriptionStatus, status);
 
 module.exports = router;

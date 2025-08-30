@@ -57,7 +57,17 @@ app.use(cors({
     credentials: true,
     optionsSuccessStatus: 200
 }));
-app.use(rateLimit({ windowMs: 60 * 1000, max: 120 }));
+app.set('trust proxy', 1);
+app.use(rateLimit({ 
+    windowMs: 60 * 1000, 
+    max: 120,
+    standardHeaders: true,
+    legacyHeaders: false,
+    skip: (req) => {
+        // Skip rate limiting for health checks
+        return req.path === '/health';
+    }
+}));
 
 // API routes
 app.use('/api/auth', authRoutes);

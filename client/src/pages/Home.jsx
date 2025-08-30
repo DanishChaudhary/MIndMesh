@@ -723,7 +723,7 @@ export default function Home({ user, onLogout }) {
                                 {userSubscription.status === 'active' ? (
                                     <div>
                                         <p className="text-sm text-gray-700 mb-1">
-                                            <span className="font-medium capitalize">{userSubscription.currentPlan}</span> Plan
+                                            <span className="font-medium">{userSubscription.planName || userSubscription.currentPlan || 'Premium Plan'}</span>
                                         </p>
                                         <p className={`text-sm font-medium ${
                                             userSubscription.remainingDays <= 2 ? 'text-red-600' : 'text-green-600'

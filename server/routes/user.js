@@ -38,7 +38,16 @@ router.post('/practice-queue', requireAuth, async (req, res, next) => {
             }
         });
         
-        await User.updateOne({ _id: req.user.id }, { $push: { practiceQueue: practiceItem } });
+        // Check if item already exists to avoid duplicates
+        const existingUser = await User.findById(req.user.id);
+        const isDuplicate = existingUser.practiceQueue.some(existing => 
+            (existing.word && existing.word === practiceItem.word) || 
+            (existing.phrase && existing.phrase === practiceItem.phrase)
+        );
+        
+        if (!isDuplicate) {
+            await User.updateOne({ _id: req.user.id }, { $push: { practiceQueue: practiceItem } });
+        }
         res.json({ ok: true });
     } catch (err) { next(err); }
 });
