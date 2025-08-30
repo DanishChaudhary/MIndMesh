@@ -26,8 +26,8 @@ const interval = 120000;
 function reloadWebsite(){
     axios 
     .get(url)
-    .then(res => {  })
-    .catch(err => {});
+    .then(res => { console.log('Website reloaded successfully'); })
+    .catch(err => { console.log('Website reload failed'); });
 }
 
 setInterval(reloadWebsite, interval);
