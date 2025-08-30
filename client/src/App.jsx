@@ -138,10 +138,10 @@ export default function App() {
                 <Route path="/quiz" element={<Quiz user={user} />} />
                 <Route path="/payment" element={<Protected user={user}><Payment user={user} /></Protected>} />
                 <Route path="/payment/validate/:orderId" element={<Protected user={user}><PaymentValidate /></Protected>} />
-                <Route path="/vocab-ows/:letter" element={<Protected user={user}><VocabOws /></Protected>} />
-                <Route path="/vocab-iph/:letter" element={<Protected user={user}><VocabIph /></Protected>} />
-                <Route path="/vocab-synonyms/:letter" element={<Protected user={user}><VocabSynonyms /></Protected>} />
-                <Route path="/vocab-antonyms/:letter" element={<Protected user={user}><VocabAntonyms /></Protected>} />
+                <Route path="/vocab-ows/:letter" element={<Protected user={user}><VocabOws user={user} /></Protected>} />
+                <Route path="/vocab-iph/:letter" element={<Protected user={user}><VocabIph user={user} /></Protected>} />
+                <Route path="/vocab-synonyms/:letter" element={<Protected user={user}><VocabSynonyms user={user} /></Protected>} />
+                <Route path="/vocab-antonyms/:letter" element={<Protected user={user}><VocabAntonyms user={user} /></Protected>} />
                 <Route path="/synonyms" element={<Protected user={user}><Synonyms /></Protected>} />
                 <Route path="/antonyms" element={<Protected user={user}><Antonyms /></Protected>} />
                 <Route path="/privacy-policy" element={<SimplePrivacyPolicy />} />

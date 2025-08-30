@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, Link, useSearchParams } from 'react-router-dom'
 import axios from 'axios'
 
-export default function VocabSynonyms() {
+export default function VocabSynonyms({ user }) {
     const { letter } = useParams()
     const [searchParams, setSearchParams] = useSearchParams()
     const [items, setItems] = useState([])
@@ -61,6 +61,46 @@ export default function VocabSynonyms() {
                     >
                         Retry
                     </button>
+                </div>
+            </div>
+        )
+    }
+
+    // Check subscription status
+    const hasActiveSubscription = user && user.subscription && user.subscription.status === 'active' && 
+                                 user.subscription.expiresAt && new Date() < new Date(user.subscription.expiresAt)
+    
+    if (!hasActiveSubscription) {
+        return (
+            <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+                <div className="container mx-auto px-4 py-8 max-w-4xl">
+                    <div className="bg-white rounded-2xl shadow-lg p-8">
+                        <div className="text-center">
+                            <div className="mb-6">
+                                <svg className="w-16 h-16 text-yellow-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-3">Premium Content</h2>
+                                <p className="text-lg text-yellow-700 bg-yellow-100 border border-yellow-300 rounded-lg p-4 inline-block">
+                                    This content requires a subscription. Please upgrade to access all letters and quiz types.
+                                </p>
+                            </div>
+                            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                                <Link 
+                                    to="/#subscription-plans" 
+                                    className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-indigo-800 transition-all duration-200 shadow-md"
+                                >
+                                    Upgrade Now
+                                </Link>
+                                <Link 
+                                    to="/" 
+                                    className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors"
+                                >
+                                    Back to Home
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
