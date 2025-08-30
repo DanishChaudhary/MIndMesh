@@ -53,7 +53,7 @@ exports.wotd = async (req, res, next) => {
         
         if (!todayWord) {
             // If no word for today, use day-based cycling as fallback
-            const epoch = new Date('2024-01-01');
+            const epoch = new Date('2025-08-30');
             const daysSinceEpoch = Math.floor((today - epoch) / (1000 * 60 * 60 * 24));
             const wordIndex = daysSinceEpoch % wotdData.length;
             todayWord = wotdData[wordIndex];

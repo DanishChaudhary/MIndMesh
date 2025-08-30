@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap location
+Sitemap: https://brainmesh.com/sitemap.xml
+
+# Crawl-delay for all bots (optional)
+Crawl-delay: 1
