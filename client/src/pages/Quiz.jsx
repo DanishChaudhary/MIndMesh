@@ -92,11 +92,11 @@ export default function Quiz({ user }) {
                         return
                     }
                     
-                    // Check if user has subscription - check both hasActiveSubscription and subscription object
-                    const hasSubscription = user.hasActiveSubscription || 
-                                           (user.subscription && user.subscription.plans && user.subscription.plans.length > 0);
+                    // Check if user has active subscription
+                    const hasActiveSubscription = user.subscription && user.subscription.status === 'active' && 
+                                                 user.subscription.expiresAt && new Date() < new Date(user.subscription.expiresAt)
                     
-                    if (!hasSubscription) {
+                    if (!hasActiveSubscription) {
                         setError('subscription_required')
                         setLoading(false)
                         return
