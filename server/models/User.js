@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
     resetPasswordToken: String,
     resetPasswordExpiry: Date,
     subscription: {
-        currentPlan: { type: String, enum: ['trial', '3months', '6months', '1year', 'basic', 'premium'], default: null },
+        currentPlan: { type: String, enum: ['trial', '3months', '6months', '1year'], default: null },
         planName: { type: String, default: null }, // Human readable plan name
         planPrice: { type: Number, default: 0 }, // Store the price paid (19rs, etc.)
         status: { type: String, enum: ['active', 'inactive', 'expired'], default: 'inactive' },

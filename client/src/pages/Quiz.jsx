@@ -39,7 +39,7 @@ export default function Quiz({ user }) {
     // For authenticated users, check subscription for premium content
     if (user && !isFreeQuiz) {
         const userPlans = user.subscription?.plans || []
-        const hasValidSubscription = userPlans.includes('basic') || userPlans.includes('premium')
+        const hasValidSubscription = userPlans.includes('trial') || userPlans.includes('3months') || userPlans.includes('6months') || userPlans.includes('1year')
         
         if (!hasValidSubscription) {
             return (
@@ -228,7 +228,7 @@ export default function Quiz({ user }) {
         // Use correctAnswer from server response if available, otherwise fallback to type-based logic
         let correctAnswer = currentQ.correctAnswer
         if (!correctAnswer) {
-            if (type === 'ows' || type === 'top200ows' || type === 'freequiz') {
+            if (type === 'ows' || type === 'top200ows' || type === 'freequiz' || type === 'free') {
                 correctAnswer = currentQ.word
             } else if (type === 'synonyms' || type === 'top200synonyms') {
                 correctAnswer = currentQ.synonym

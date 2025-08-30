@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-const url = 'https://www.brainmesh.in/';
+const url = 'https://www.brainmesh.in';
 const interval = 120000;
 
 function reloadWebsite(){

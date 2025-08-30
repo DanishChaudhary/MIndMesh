@@ -204,8 +204,6 @@ export default function Home({ user, onLogout }) {
         if (userPlans.includes('6months')) return { name: '6 Months Plan', id: '6months' }
         if (userPlans.includes('3months')) return { name: '3 Months Plan', id: '3months' }
         if (userPlans.includes('trial')) return { name: '7 Days Trial', id: 'trial' }
-        if (userPlans.includes('premium')) return { name: 'Premium Plan', id: 'premium' }
-        if (userPlans.includes('basic')) return { name: 'Basic Plan', id: 'basic' }
         
         return null
     }
@@ -285,7 +283,7 @@ export default function Home({ user, onLogout }) {
                 </div>
             )}
             
-            <div className="container mx-auto px-4 py-8 max-w-6xl">
+            <div className="container mx-auto px-4 py-4 max-w-6xl">
                 <main>
                 {/* NAV: responsive, accessible, collapsible */}
                 <nav className="w-full flex items-center justify-between gap-3">
@@ -1139,4 +1137,3 @@ export default function Home({ user, onLogout }) {
         </div>
     )
 }
-
