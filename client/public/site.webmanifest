@@ -1,7 +1,7 @@
 {
-    "name": "BlackBook Vocab",
-    "short_name": "BlackBook",
-    "description": "Master English Vocabulary with Interactive Quizzes",
+    "name": "BrainMesh - English Vocabulary Master",
+    "short_name": "BrainMesh",
+    "description": "Master English vocabulary with 5000+ interactive quizzes for competitive exams",
     "icons": [
         {
             "src": "/favicon-16x16.png",
@@ -19,6 +19,11 @@
             "type": "image/png"
         },
         {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
             "src": "/apple-touch-icon.png",
             "sizes": "180x180",
             "type": "image/png"
@@ -28,5 +33,6 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "start_url": "/",
-    "scope": "/"
+    "scope": "/",
+    "orientation": "portrait"
 }
