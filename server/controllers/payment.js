@@ -30,10 +30,10 @@ function getPlanNameFromId(planId) {
 
 // Define valid plans and their exact amounts
 const VALID_PLANS = {
-    'trial': 19,
+    'trial': 1,
     '3months': 129, 
-    '6months': 199,
-    '1year': 329
+    '6months': 219,
+    '1year': 349
 };
 
 exports.initiate = async (req, res, next) => {
