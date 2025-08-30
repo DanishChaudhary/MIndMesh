@@ -1,0 +1,96 @@
+[
+  {
+    "date": "2025-08-21",
+    "word": "Aberrant",
+    "pos": "Adj.",
+    "definition": "Departing from an accepted standard; deviant",
+    "synonyms": [
+      "deviant",
+      "abnormal",
+      "atypical"
+    ],
+    "antonyms": [
+      "normal",
+      "typical",
+      "standard"
+    ]
+  },
+  {
+    "date": "2025-01-22",
+    "word": "Cogent",
+    "pos": "Adj.",
+    "definition": "Clear, logical, and convincing",
+    "synonyms": [
+      "compelling",
+      "convincing",
+      "persuasive"
+    ],
+    "antonyms": [
+      "weak",
+      "unconvincing",
+      "illogical"
+    ]
+  },
+  {
+    "date": "2025-01-23",
+    "word": "Ephemeral",
+    "pos": "Adj.",
+    "definition": "Lasting for a very short time",
+    "synonyms": [
+      "transient",
+      "fleeting",
+      "temporary"
+    ],
+    "antonyms": [
+      "permanent",
+      "lasting",
+      "enduring"
+    ]
+  },
+  {
+    "date": "2025-01-24",
+    "word": "Gregarious",
+    "pos": "Adj.",
+    "definition": "Fond of the company of others; sociable",
+    "synonyms": [
+      "sociable",
+      "outgoing",
+      "extroverted"
+    ],
+    "antonyms": [
+      "antisocial",
+      "introverted",
+      "reclusive"
+    ]
+  },
+  {
+    "date": "2025-01-25",
+    "word": "Lucid",
+    "pos": "Adj.",
+    "definition": "Expressed clearly; easy to understand",
+    "synonyms": [
+      "clear",
+      "coherent",
+      "intelligible"
+    ],
+    "antonyms": [
+      "confusing",
+      "unclear",
+      "muddled"
+    ]
+  },
+  {
+    "date": "2025-08-30",
+    "word": "Ephemeral",
+    "pos": "Adj.",
+    "definition": "Lasting for a very short time",
+    "synonyms": [
+      "fleeting",
+      "transient"
+    ],
+    "antonyms": [
+      "permanent",
+      "lasting"
+    ]
+  }
+]

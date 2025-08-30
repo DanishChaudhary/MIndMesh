@@ -79,10 +79,11 @@ exports.wotd = async (req, res, next) => {
         
         // Ensure synonyms and antonyms are included
         const responseWord = {
-            ...todayWord,
+            word: todayWord.word,
+            pos: todayWord.pos,
+            definition: todayWord.definition,
             synonyms: todayWord.synonyms || [],
-            antonyms: todayWord.antonyms || [],
-            example: todayWord.example || null
+            antonyms: todayWord.antonyms || []
         };
         
         res.json(responseWord);
