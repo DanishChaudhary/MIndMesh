@@ -4,6 +4,7 @@
     "word": "Aberrant",
     "pos": "Adj.",
     "definition": "Departing from an accepted standard; deviant",
+    "example": "The aberrant behavior of the student concerned the teachers.",
     "synonyms": [
       "deviant",
       "abnormal",
@@ -20,6 +21,7 @@
     "word": "Cogent",
     "pos": "Adj.",
     "definition": "Clear, logical, and convincing",
+    "example": "She presented a cogent argument for the new policy.",
     "synonyms": [
       "compelling",
       "convincing",
@@ -36,6 +38,7 @@
     "word": "Ephemeral",
     "pos": "Adj.",
     "definition": "Lasting for a very short time",
+    "example": "The beauty of cherry blossoms is ephemeral.",
     "synonyms": [
       "transient",
       "fleeting",
@@ -52,6 +55,7 @@
     "word": "Gregarious",
     "pos": "Adj.",
     "definition": "Fond of the company of others; sociable",
+    "example": "His gregarious nature made him popular at parties.",
     "synonyms": [
       "sociable",
       "outgoing",
@@ -68,6 +72,7 @@
     "word": "Lucid",
     "pos": "Adj.",
     "definition": "Expressed clearly; easy to understand",
+    "example": "The professor gave a lucid explanation of the complex theory.",
     "synonyms": [
       "clear",
       "coherent",
@@ -84,6 +89,7 @@
     "word": "Pragmatic",
     "pos": "Adj.",
     "definition": "Dealing with things sensibly and realistically",
+    "example": "She took a pragmatic approach to solving the problem.",
     "synonyms": [
       "practical",
       "realistic",
@@ -100,6 +106,7 @@
     "word": "Verbose",
     "pos": "Adj.",
     "definition": "Using or expressed in more words than are needed",
+    "example": "His verbose speech bored the audience.",
     "synonyms": [
       "wordy",
       "long-winded",
