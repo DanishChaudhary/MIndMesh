@@ -814,11 +814,11 @@ export default function Home({ user, onLogout }) {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">7 Days Trial</h3>
                                 <div className="mb-4">
-                                    <span className="text-3xl font-bold text-gray-900">₹19</span>
+                                    <span className="text-3xl font-bold text-gray-900">₹1</span>
                                     <span className="text-lg text-gray-500 line-through ml-2">₹49</span>
                                 </div>
                                 <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
-                                    61% OFF
+                                    98% OFF
                                 </div>
                                 <ul className="text-sm text-gray-600 space-y-2 mb-6 text-left">
                                     <li className="flex items-center">
@@ -863,10 +863,10 @@ export default function Home({ user, onLogout }) {
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">3 Months Plan</h3>
                                 <div className="mb-4">
                                     <span className="text-3xl font-bold text-gray-900">₹129</span>
-                                    <span className="text-lg text-gray-500 line-through ml-2">₹199</span>
+                                    <span className="text-lg text-gray-500 line-through ml-2">₹299</span>
                                 </div>
                                 <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
-                                    35% OFF
+                                    57% OFF
                                 </div>
                                 <ul className="text-sm text-gray-600 space-y-2 mb-6 text-left">
                                     <li className="flex items-center">
@@ -923,11 +923,11 @@ export default function Home({ user, onLogout }) {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">6 Months Plan</h3>
                                 <div className="mb-4">
-                                    <span className="text-3xl font-bold text-gray-900">₹199</span>
-                                    <span className="text-lg text-gray-500 line-through ml-2">₹399</span>
+                                    <span className="text-3xl font-bold text-gray-900">₹219</span>
+                                    <span className="text-lg text-gray-500 line-through ml-2">₹499</span>
                                 </div>
                                 <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
-                                    50% OFF
+                                    56% OFF
                                 </div>
                                 <ul className="text-sm text-gray-600 space-y-2 mb-6 text-left">
                                     <li className="flex items-center">
@@ -971,11 +971,11 @@ export default function Home({ user, onLogout }) {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">12 Months Plan</h3>
                                 <div className="mb-4">
-                                    <span className="text-3xl font-bold text-gray-900">₹329</span>
-                                    <span className="text-lg text-gray-500 line-through ml-2">₹529</span>
+                                    <span className="text-3xl font-bold text-gray-900">₹349</span>
+                                    <span className="text-lg text-gray-500 line-through ml-2">₹699</span>
                                 </div>
                                 <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
-                                    37% OFF
+                                    50% OFF
                                 </div>
                                 <ul className="text-sm text-gray-600 space-y-2 mb-6 text-left">
                                     <li className="flex items-center">
